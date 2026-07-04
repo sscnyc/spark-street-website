@@ -541,6 +541,7 @@
 
     var catLinks = document.querySelectorAll('#pub-filter a');
     var topicLinks = document.querySelectorAll('#topic-filter a');
+    var topicFilterEl = document.getElementById('topic-filter');
     var items = document.querySelectorAll('#pub-list .pub-item');
 
     var currentCat = initialCat;
@@ -558,6 +559,7 @@
       topicLinks.forEach(function (link) {
         link.classList.toggle('active', link.getAttribute('data-topic') === currentTopic);
       });
+      topicFilterEl.style.display = (currentCat === 'journal') ? '' : 'none';
     }
 
     function updateUrl() {
@@ -573,6 +575,7 @@
       link.addEventListener('click', function (e) {
         e.preventDefault();
         currentCat = link.getAttribute('data-cat');
+        if (currentCat !== 'journal') currentTopic = 'all';
         updateUrl();
         applyFilters();
       });

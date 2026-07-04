@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Publications | Spark Street Advisors</title>
-<meta name="description" content="Spark Street Advisors - Journal Articles, Pandemic Agreement analysis, and Reports.">
+<title>Articles | Spark Street Advisors</title>
+<meta name="description" content="Spark Street Advisors - journal publications and analysis, browsable by topic.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
@@ -20,7 +20,7 @@
       <a href="/#how-we-work">How We Work</a>
       <a href="/#what-we-do">What We Do</a>
       <a href="/team/core-team/">Team</a>
-      <a href="/publications/">Publications</a>
+      <a href="/publications/">Articles</a>
     </nav>
     <a class="nav-cta" href="mailto:SLehtimaki@ssc.nyc?subject=Spark%20Street%20Advisors" id="contact-btn">Contact Us</a>
   </div>
@@ -36,20 +36,17 @@
       });
     }
 
-    function wireContactFallback(btn) {
-      if (!btn) return;
-      btn.addEventListener('click', function () {
-        var original = btn.textContent;
-        if (navigator.clipboard) {
-          navigator.clipboard.writeText('SLehtimaki@ssc.nyc').then(function () {
-            btn.textContent = 'Email copied!';
-            setTimeout(function () { btn.textContent = original; }, 2000);
-          }).catch(function () {});
-        }
-      });
-    }
-    wireContactFallback(document.getElementById('contact-btn'));
-    document.querySelectorAll('.btn[href^="mailto:"]').forEach(wireContactFallback);
+    document.addEventListener('click', function (e) {
+      var link = e.target.closest('a[href^="mailto:"]');
+      if (!link) return;
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText('SLehtimaki@ssc.nyc').then(function () {
+          var original = link.textContent;
+          link.textContent = 'Email copied!';
+          setTimeout(function () { link.textContent = original; }, 2000);
+        }).catch(function () {});
+      }
+    });
   })();
 </script>
 
@@ -57,415 +54,475 @@
 <section class="page-hero">
   <div class="wrap">
     <span class="eyebrow">Publications</span>
-    <h1>Journal Articles, Analysis &amp; Reports</h1>
+    <h1>Articles</h1>
   </div>
 </section>
 
 <section class="section">
   <div class="wrap">
     <div class="pub-filter" id="pub-filter">
-      <a href="#" data-cat="all" class="active">All</a>
-      <a href="#" data-cat="journal">Journal Articles</a>
-      <a href="#" data-cat="pandemic">Pandemic Agreement</a>
-      <a href="#" data-cat="report">Analysis</a>
+      <a href="#" data-cat="journal" class="active">Journal Publications</a>
+      <a href="#" data-cat="analysis">Analysis</a>
+    </div>
+
+    <div class="pub-filter pub-filter-topics" id="topic-filter">
+      <a href="#" data-topic="all" class="active">All Topics</a>
+      <a href="#" data-topic="Pandemic Treaty">Pandemic Treaty</a>
+      <a href="#" data-topic="Immunization">Immunization</a>
+      <a href="#" data-topic="Maternal Health">Maternal Health</a>
+      <a href="#" data-topic="COVID 19">COVID 19</a>
+      <a href="#" data-topic="Data and AI">Data and AI</a>
+      <a href="#" data-topic="Financing and Access">Financing and Access</a>
+      <a href="#" data-topic="Primary Care and Mental Health">Primary Care and Mental Health</a>
+      <a href="#" data-topic="Other">Other</a>
     </div>
 
     <div id="pub-list">
       
-      <div class="pub-item" data-cat="journal">
+      <div class="pub-item" data-cat="journal" data-topic="Immunization">
         <span class="year">2025</span>
+        <div class="topic-tag">Immunization</div>
         <h3><a href="/publications/global-health-equity-trump-immunization/">Global Health Equity Considerations of Political Decisions: Trump, The US, and Immunization</a></h3>
         <div class="authors">Juan Pablo Gutiérrez, Brian Wahl, Susanna Lehtimaki, Nina Schwalbe</div>
         <p class="summary">The paper examines how political choices on global health funding affect the four key dimensions of vaccination and immunization in LMICs: access, affordability, availability, and acceptability. It shows how reductions...</p>
         <a class="source-link" href="/publications/global-health-equity-trump-immunization/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="both">
+      <div class="pub-item" data-cat="journal" data-topic="Pandemic Treaty">
         <span class="year">2025</span>
+        <div class="topic-tag">Pandemic Treaty</div>
         <h3><a href="/publications/adoption-pandemic-treaty-historic/">Adoption of pandemic treaty is historic: Compliance and accountability must now follow</a></h3>
         <div class="authors">Taran K Deol, Elliot Hannon, Susanna Lehtimaki, Matthew M Kavanagh, Nina Schwalbe</div>
         <p class="summary">The Pandemic Treaty adopted at the 78th World Health Assembly (WHA78) is a landmark achievement in global health. Adoption is just a first step. As negotiators continue to work on Pathogen Access and Benefits Sharing,...</p>
         <a class="source-link" href="/publications/adoption-pandemic-treaty-historic/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="journal">
+      <div class="pub-item" data-cat="journal" data-topic="Pandemic Treaty">
         <span class="year">2025</span>
+        <div class="topic-tag">Pandemic Treaty</div>
         <h3><a href="/publications/pandemic-treaty-forensic-review/">The pandemic treaty: A forensic review of process and pitfalls</a></h3>
         <div class="authors">Nina Schwalbe, Susanna Lehtimaki, Elliot Hannon</div>
         <p class="summary">This article examines efforts to develop a pandemic treaty through World Health Organization member state agreement from 2021 to 2025, focusing on challenges during the process. The COVID-19 pandemic showed the critical...</p>
         <a class="source-link" href="/publications/pandemic-treaty-forensic-review/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="both">
+      <div class="pub-item" data-cat="journal" data-topic="Pandemic Treaty">
         <span class="year">2025</span>
+        <div class="topic-tag">Pandemic Treaty</div>
         <h3><a href="/publications/pandemic-treaty-win-multilateralism/">Pandemic treaty is a win for multilateralism and global health</a></h3>
         <div class="authors">Nina Schwalbe</div>
         <p class="summary">The World Health Organization&#39;s new Pandemic Agreement marks a historic step toward global health security and equity. Reached after three years of negotiations, the Treaty outlines commitments to strengthen health...</p>
         <a class="source-link" href="/publications/pandemic-treaty-win-multilateralism/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="pandemic">
+      <div class="pub-item" data-cat="journal" data-topic="COVID 19">
         <span class="year">2025</span>
+        <div class="topic-tag">COVID 19</div>
         <h3><a href="/publications/lessons-nyc-vaccine-rollout/">The lessons New York still has not learned from the Covid vaccine rollout</a></h3>
         <div class="authors">Nina Schwalbe</div>
         <p class="summary">New York&#39;s early COVID-19 vaccine rollout failed its most vulnerable residents. Drawing on firsthand experience and data, this article reports how older adults in low-income neighborhoods were left behind. New York&#39;s...</p>
         <a class="source-link" href="/publications/lessons-nyc-vaccine-rollout/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="pandemic">
+      <div class="pub-item" data-cat="journal" data-topic="Pandemic Treaty">
         <span class="year">2025</span>
+        <div class="topic-tag">Pandemic Treaty</div>
         <h3><a href="/publications/why-we-need-pandemic-treaty-now/">Why we need a pandemic treaty now</a></h3>
         <div class="authors">Nina Schwalbe</div>
         <p class="summary">With just one week of formal negotiations left, the world may be nearing its last chance to secure a global pandemic treaty that strengthens preparedness and response. Despite legal assurances that national sovereignty...</p>
         <a class="source-link" href="/publications/why-we-need-pandemic-treaty-now/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="journal">
+      <div class="pub-item" data-cat="journal" data-topic="Maternal Health">
         <span class="year">2025</span>
+        <div class="topic-tag">Maternal Health</div>
         <h3><a href="/publications/gender-justice-lancet-commission/">Achieving gender justice for global health equity: the Lancet Commission on gender and global health</a></h3>
         <div class="authors">Sarah Hawkes, Elhadj As Sy, Gary Barker, Frances Elaine Baum, Kent Buse, and Nina Schwalbe, among others</div>
         <p class="summary">Achieving gender justice in global health has the potential to improve health outcomes, reduce inequities, and transform workplaces and governance. Yet gender has become a polarizing concept, and efforts to advance...</p>
         <a class="source-link" href="/publications/gender-justice-lancet-commission/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="journal">
+      <div class="pub-item" data-cat="journal" data-topic="Maternal Health">
         <span class="year">2025</span>
+        <div class="topic-tag">Maternal Health</div>
         <h3><a href="/publications/impact-hub-maternal-health/">An &#39;impact hub&#39; approach to transforming global maternal health outcomes by 2030</a></h3>
         <div class="authors">Mary-Ann Etiebet, Anne-Marie Slaughter, Lia Tadesse Gebredhin, Gordan LaForge, Alaa Murabit, Nina Schwalbe</div>
         <p class="summary">Preventing maternal mortality remains a persistent global challenge. Eliminating preventable deaths requires more than isolated success stories, it demands a coordinated, systemic approach rooted in equity, local...</p>
         <a class="source-link" href="/publications/impact-hub-maternal-health/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="both">
+      <div class="pub-item" data-cat="journal" data-topic="Other">
         <span class="year">2024</span>
+        <div class="topic-tag">Other</div>
         <h3><a href="/publications/mpox-neglect-dangerous-virus/">Mpox: Neglect has led to a more dangerous virus now spreading across borders</a></h3>
         <div class="authors">Christine McNab, Els Torreele, Ayoade Alakija, and Nina Schwalbe, among others</div>
         <p class="summary">The ongoing mpox outbreaks in Africa, driven by various clades including a newly identified Ib variant, are a severe concern. Despite mpox being endemic in several African countries for years, international attention...</p>
         <a class="source-link" href="/publications/mpox-neglect-dangerous-virus/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="journal">
+      <div class="pub-item" data-cat="journal" data-topic="Pandemic Treaty">
         <span class="year">2024</span>
+        <div class="topic-tag">Pandemic Treaty</div>
         <h3><a href="/publications/pandemic-agreement-african-win/">The pandemic agreement: Achieving an African win for health security inequity</a></h3>
         <div class="authors">Nicaise Ndembi, Nebiyu Dereje, Fifa A. Rahman, and Nina Schwalbe, among others</div>
         <p class="summary">The COVID-19 pandemic exposed the frailty and disparities of global health systems, especially in Africa. Vaccine nationalism and lack of inclusivity characterized early responses, raising concerns about global health...</p>
         <a class="source-link" href="/publications/pandemic-agreement-african-win/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="journal">
+      <div class="pub-item" data-cat="journal" data-topic="Data and AI">
         <span class="year">2024</span>
+        <div class="topic-tag">Data and AI</div>
         <h3><a href="/publications/fifa-benefit-sharing-global-health/">Beyond &quot;business as usual&quot;: Lessons from FIFA for fair benefit-sharing in global health</a></h3>
         <div class="authors">Brian Wahl, Gabriel Butin, Spring Gombe, Nina Schwalbe</div>
         <p class="summary">Researchers and agencies from low- and middle-income countries often contribute significantly to public health data but lack adequate compensation. Incentivizing data sharing is crucial for effective pandemic response,...</p>
         <a class="source-link" href="/publications/fifa-benefit-sharing-global-health/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="journal">
+      <div class="pub-item" data-cat="journal" data-topic="Financing and Access">
         <span class="year">2024</span>
+        <div class="topic-tag">Financing and Access</div>
         <h3><a href="/publications/beyond-gdp-health-financing/">From lemming to leader: Moving beyond Gross Domestic Product (GDP) to bring health financing assistance into the 21st century</a></h3>
         <div class="authors">Tiffany Nassiri-Ansari, Nina Schwalbe, Susanna Lehtimaki</div>
         <p class="summary">Nearly 90 years after GDP was introduced to measure economic growth, there are increasing calls to stop using it and GNI for broader purposes, such as determining eligibility for development assistance. These measures...</p>
         <a class="source-link" href="/publications/beyond-gdp-health-financing/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="journal">
+      <div class="pub-item" data-cat="journal" data-topic="COVID 19">
         <span class="year">2024</span>
+        <div class="topic-tag">COVID 19</div>
         <h3><a href="/publications/nyc-covid-vaccine-rollout-strategy/">Assessing New York City&#39;s COVID-19 Vaccine Rollout Strategy: A Case for Risk-Informed Distribution</a></h3>
         <div class="authors">Nina Schwalbe, Marta C. Nunes, Clare Cutland, Brian Wahl, Daniel Reidpath</div>
         <p class="summary">This study reviews the impact of early COVID-19 vaccine eligibility policies on coverage and outcomes in New York City. Using data from the Census Bureau and New York City Health, the authors assessed vaccination...</p>
         <a class="source-link" href="/publications/nyc-covid-vaccine-rollout-strategy/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="both">
+      <div class="pub-item" data-cat="journal" data-topic="Pandemic Treaty">
         <span class="year">2024</span>
+        <div class="topic-tag">Pandemic Treaty</div>
         <h3><a href="/publications/governance-provisions-who-draft/">Governance provisions in the WHO Pandemic Agreement draft</a></h3>
         <div class="authors">Nina Schwalbe, Elliot Hannon, Lynda Gilby, Susanna Lehtimaki</div>
         <p class="summary">The WHO Pandemic Agreement draft lacks sufficient accountability measures. While it introduces a Conference of the Parties (COP) for governance, crucial details such as review scope and consequences for non-compliance...</p>
         <a class="source-link" href="/publications/governance-provisions-who-draft/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="both">
+      <div class="pub-item" data-cat="journal" data-topic="Pandemic Treaty">
         <span class="year">2024</span>
+        <div class="topic-tag">Pandemic Treaty</div>
         <h3><a href="/publications/shaping-global-health-law-un/">Shaping Global Health Law through United Nations Governance: The UN High-Level Meeting on Pandemic PPR</a></h3>
         <div class="authors">Benjamin Mason Meier, Alexandra Finch, Nina Schwalbe</div>
         <p class="summary">The UN General Assembly High-Level Meeting on pandemic prevention, preparedness, and response failed to garner significant high-level commitment and momentum for global health emergency governance. This article explores...</p>
         <a class="source-link" href="/publications/shaping-global-health-law-un/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="both">
+      <div class="pub-item" data-cat="journal" data-topic="Pandemic Treaty">
         <span class="year">2024</span>
+        <div class="topic-tag">Pandemic Treaty</div>
         <h3><a href="/publications/getting-in-formation-who-constitutional/">Getting in Formation: WHO Constitutional Heads of Power and the Pandemic Agreement</a></h3>
         <div class="authors">Alexandra L Phelan, Nina Schwalbe</div>
         <p class="summary">WHO Member States are nearing the end of negotiations for a proposed Pandemic Agreement, considering whether to adopt it under Article 19 or Article 21 of the WHO Constitution. While this may seem a simple &#39;opt in&#39; or...</p>
         <a class="source-link" href="/publications/getting-in-formation-who-constitutional/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="both">
+      <div class="pub-item" data-cat="journal" data-topic="Pandemic Treaty">
         <span class="year">2024</span>
+        <div class="topic-tag">Pandemic Treaty</div>
         <h3><a href="/publications/new-pandemic-treaty-safer-hands/">The new pandemic treaty: Are we in safer hands? Probably not</a></h3>
         <div class="authors">Nina Schwalbe, Elliot Hannon, Susanna Lehtimaki</div>
         <p class="summary">The latest draft of the pandemic treaty falls short of expectations with governance revisions that lack accountability measures, leaving oversight to Member States through a World Health Assembly committee. Without...</p>
         <a class="source-link" href="/publications/new-pandemic-treaty-safer-hands/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="pandemic">
+      <div class="pub-item" data-cat="journal" data-topic="Pandemic Treaty">
         <span class="year">2024</span>
+        <div class="topic-tag">Pandemic Treaty</div>
         <h3><a href="/publications/who-negotiating-pandemic-treaty-bulletin/">WHO Member States are negotiating a Pandemic Treaty. But will countries follow the new rules?</a></h3>
         <div class="authors">Elliot Hannon, Nina Schwalbe, Susanna Lehtimaki</div>
         <p class="summary">An independent monitoring mechanism is essential for the Pandemic Accord. Negotiators must remember to keep Member States accountable. It&#39;s feasible, viable, achievable and vital for preparing for the inevitable next...</p>
         <a class="source-link" href="/publications/who-negotiating-pandemic-treaty-bulletin/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="both">
+      <div class="pub-item" data-cat="journal" data-topic="Pandemic Treaty">
         <span class="year">2024</span>
+        <div class="topic-tag">Pandemic Treaty</div>
         <h3><a href="/publications/where-there-is-a-will-lancet/">Where there is a will, there is a way: independent assessment of member state compliance with the pandemic agreement</a></h3>
         <div class="authors">Susanna Lehtimaki, Elliot Hannon, Layth Hanbali, Daniela-Filipa Soltan, Kimberley Peek, Tiffany Nassiri-Ansari, Nina Schwalbe</div>
         <p class="summary">On Oct 16, the world got its first glimpse of the complete draft negotiating text of the proposed pandemic agreement. In analysis of the preliminary draft, the authors found gaps in crucial areas such as health system...</p>
         <a class="source-link" href="/publications/where-there-is-a-will-lancet/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="both">
+      <div class="pub-item" data-cat="journal" data-topic="Pandemic Treaty">
         <span class="year">2023</span>
+        <div class="topic-tag">Pandemic Treaty</div>
         <h3><a href="/publications/independent-monitoring-new-pandemic-agreement/">Independent monitoring and the new pandemic agreement</a></h3>
         <div class="authors">Layth Hanbali, Elliot Hannon, Susanna Lehtimaki, Christine McNab, Nina Schwalbe</div>
         <p class="summary">Negotiations are ongoing at the WHO for a binding pandemic prevention agreement, but past agreements haven&#39;t guaranteed effective implementation. While enforcement mechanisms are crucial, they&#39;re inconsistently applied...</p>
         <a class="source-link" href="/publications/independent-monitoring-new-pandemic-agreement/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="journal">
+      <div class="pub-item" data-cat="journal" data-topic="Primary Care and Mental Health">
         <span class="year">2023</span>
+        <div class="topic-tag">Primary Care and Mental Health</div>
         <h3><a href="/publications/primary-health-care-cornerstone/">Primary health care: a cornerstone of pandemic prevention, preparedness, response, and recovery</a></h3>
         <div class="authors">Arush Lal, Nina Schwalbe</div>
         <p class="summary">The COVID-19 crisis highlighted the devastating consequences of neglecting primary health care before, during, and after a pandemic. This regression created a vicious cycle of vulnerability, especially for groups at high...</p>
         <a class="source-link" href="/publications/primary-health-care-cornerstone/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="pandemic">
+      <div class="pub-item" data-cat="journal" data-topic="Pandemic Treaty">
         <span class="year">2023</span>
+        <div class="topic-tag">Pandemic Treaty</div>
         <h3><a href="/publications/cannot-give-up-pandemic-treaty/">We cannot give up on the global pandemic treaty</a></h3>
         <div class="authors">Nina Schwalbe</div>
         <p class="summary">Nearly two years after countries agreed to develop a new pandemic treaty, the prospect of achieving a bold new global agreement to prepare and respond to future disease threats is slipping away. The UN General Assembly&#39;s...</p>
         <a class="source-link" href="/publications/cannot-give-up-pandemic-treaty/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="journal">
+      <div class="pub-item" data-cat="journal" data-topic="Immunization">
         <span class="year">2023</span>
+        <div class="topic-tag">Immunization</div>
         <h3><a href="/publications/bold-moves-vaccine-manufacturing/">Bold moves for vaccine manufacturing equity</a></h3>
         <div class="authors">Nina Schwalbe, Ole Kristian Aars</div>
         <p class="summary">The COVID-19 pandemic resulted in an unprecedented global crisis, and although there was unprecedented speed in developing new vaccines, the benefits from licensing effective vaccines in record time were not felt by all....</p>
         <a class="source-link" href="/publications/bold-moves-vaccine-manufacturing/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="both">
+      <div class="pub-item" data-cat="journal" data-topic="Pandemic Treaty">
         <span class="year">2023</span>
+        <div class="topic-tag">Pandemic Treaty</div>
         <h3><a href="/publications/independent-monitoring-non-negotiable/">Independent monitoring for the pandemic accord: a non-negotiable provision</a></h3>
         <div class="authors">Layth Hanbali, Susanna Lehtimaki, Elliot Hannon, Christine McNab, Nina Schwalbe</div>
         <p class="summary">The COVID-19 pandemic exposed the need for a coordinated global response to pandemics. In response, the Intergovernmental Negotiating Body for a pandemic accord discussed a zero draft in February 2023. Based on a...</p>
         <a class="source-link" href="/publications/independent-monitoring-non-negotiable/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="pandemic">
+      <div class="pub-item" data-cat="journal" data-topic="Pandemic Treaty">
         <span class="year">2022</span>
+        <div class="topic-tag">Pandemic Treaty</div>
         <h3><a href="/publications/need-pandemic-treaty-hold-nations-accountable/">We need a pandemic treaty — but it must hold nations accountable</a></h3>
         <div class="authors">Nina Schwalbe, Elliot Hannon</div>
         <p class="summary">The cycle of state denial and downplaying followed by disastrous consequences is a familiar pattern in public health crises, as demonstrated during the COVID-19 pandemic. To prevent similar outcomes in the future, it is...</p>
         <a class="source-link" href="/publications/need-pandemic-treaty-hold-nations-accountable/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="pandemic">
+      <div class="pub-item" data-cat="journal" data-topic="Immunization">
         <span class="year">2022</span>
+        <div class="topic-tag">Immunization</div>
         <h3><a href="/publications/need-new-global-compact-vaccines/">We need a new global compact on vaccines</a></h3>
         <div class="authors">Nina Schwalbe</div>
         <p class="summary">Amid the emergence of monkeypox cases in the US and Europe, efforts are underway to vaccinate populations using the smallpox vaccine, which offers some cross-protection but is in limited supply. The global vaccine...</p>
         <a class="source-link" href="/publications/need-new-global-compact-vaccines/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="journal">
+      <div class="pub-item" data-cat="journal" data-topic="Immunization">
         <span class="year">2022</span>
+        <div class="topic-tag">Immunization</div>
         <h3><a href="/publications/strengthening-gavi-vaccine-equity/">Strengthening Gavi is a way forward for global vaccine equity</a></h3>
         <div class="authors">Nina Schwalbe</div>
         <p class="summary">The upcoming Biden administration COVID-19 summit shone a spotlight on global vaccine equity failure, where only 16% of people in low-income countries were vaccinated, compared to 80% in high-income nations. Lessons from...</p>
         <a class="source-link" href="/publications/strengthening-gavi-vaccine-equity/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="pandemic">
+      <div class="pub-item" data-cat="journal" data-topic="Pandemic Treaty">
         <span class="year">2022</span>
+        <div class="topic-tag">Pandemic Treaty</div>
         <h3><a href="/publications/why-still-need-pandemic-treaty/">Why we still need a pandemic treaty</a></h3>
         <div class="authors">Elliot Hannon, Layth Hanbali, Susanna Lehtimaki, Nina Schwalbe</div>
         <p class="summary">The 2022 World Health Assembly saw Member States discussing amendments to the International Health Regulations. Despite meeting in person for the first time since COVID-19, little progress was made on solutions for...</p>
         <a class="source-link" href="/publications/why-still-need-pandemic-treaty/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="journal">
+      <div class="pub-item" data-cat="journal" data-topic="Immunization">
         <span class="year">2022</span>
+        <div class="topic-tag">Immunization</div>
         <h3><a href="/publications/financial-incentives-adult-vaccination/">Use of financial incentives to increase adult vaccination coverage: A narrative review of lessons learned from COVID-19</a></h3>
         <div class="authors">Nina Schwalbe, Layth Hanbali, Marta C Nunes, Susanna Lehtimaki</div>
         <p class="summary">To encourage COVID-19 vaccination, governments have offered a wide range of incentives ranging from cash to cows. This narrative review sought to understand the evidence base informing these programs and the extent to...</p>
         <a class="source-link" href="/publications/financial-incentives-adult-vaccination/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="journal">
+      <div class="pub-item" data-cat="journal" data-topic="Immunization">
         <span class="year">2021</span>
+        <div class="topic-tag">Immunization</div>
         <h3><a href="/publications/increasing-efficiency-vaccine-production/">Increasing efficiency in vaccine production: A primer for change</a></h3>
         <div class="authors">Ole Kristian Aars, Michael Clark, Nina Schwalbe</div>
         <p class="summary">The COVID-19 pandemic highlighted the importance of vaccines as public health and pandemic preparedness tools and amplified issues ranging from equitable distribution to reliable supply. Delays in time from the first...</p>
         <a class="source-link" href="/publications/increasing-efficiency-vaccine-production/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="journal">
+      <div class="pub-item" data-cat="journal" data-topic="Primary Care and Mental Health">
         <span class="year">2021</span>
+        <div class="topic-tag">Primary Care and Mental Health</div>
         <h3><a href="/publications/digital-mental-health-adolescents/">Evidence on Digital Mental Health Interventions for Adolescents and Young People: Systematic Overview</a></h3>
         <div class="authors">Susanna Lehtimaki, Jana Martic, Brian Wahl, Katherine Foster, Nina Schwalbe</div>
         <p class="summary">Although digital interventions for mental health can be effective for both supplementing and supplanting traditional treatment, only a small proportion of existing digital platforms are evidence based. Their...</p>
         <a class="source-link" href="/publications/digital-mental-health-adolescents/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="pandemic">
+      <div class="pub-item" data-cat="journal" data-topic="Pandemic Treaty">
         <span class="year">2021</span>
+        <div class="topic-tag">Pandemic Treaty</div>
         <h3><a href="/publications/treat-pandemics-like-chemical-weapons/">The World Should Treat Pandemics Like It Treats Chemical Weapons</a></h3>
         <div class="authors">Nina Schwalbe, Susanna Lehtimaki</div>
         <p class="summary">While the world was still battling COVID-19, it was time to start preparing for the next pandemic, above all, how to prevent it. This piece argues for taking pandemic containment as seriously as other dangers of mass...</p>
         <a class="source-link" href="/publications/treat-pandemics-like-chemical-weapons/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="journal">
+      <div class="pub-item" data-cat="journal" data-topic="Data and AI">
         <span class="year">2020</span>
+        <div class="topic-tag">Data and AI</div>
         <h3><a href="/publications/data-sharing-defining-data/">Data Sharing and Global Public Health: Defining What We Mean by Data</a></h3>
         <div class="authors">Nina Schwalbe, Brian Wahl, Jingyi Song, Susanna Lehtimaki</div>
         <p class="summary">As the volume of public health data expands and data become more interconnected, a broad range of data is being used to support research and inform global health policies and practice. This paper expands on an existing...</p>
         <a class="source-link" href="/publications/data-sharing-defining-data/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="journal">
+      <div class="pub-item" data-cat="journal" data-topic="Data and AI">
         <span class="year">2020</span>
+        <div class="topic-tag">Data and AI</div>
         <h3><a href="/publications/ai-future-global-health/">Artificial intelligence (AI) and the future of global health</a></h3>
         <div class="authors">Nina Schwalbe, Brian Wahl</div>
         <p class="summary">Although AI-driven health interventions can help address several existing and emerging health challenges, many issues are not sufficiently described in the literature and warrant further exploration. These relate to the...</p>
         <a class="source-link" href="/publications/ai-future-global-health/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="journal">
+      <div class="pub-item" data-cat="journal" data-topic="Financing and Access">
         <span class="year">2020</span>
+        <div class="topic-tag">Financing and Access</div>
         <h3><a href="/publications/accelerating-access-to-medicines/">Accelerating access to medicines in a changing world</a></h3>
         <div class="authors">Hannah Ketler, Susanna Lehtimaki, Nina Schwalbe</div>
         <p class="summary">Many access tools were designed and implemented by donors, with relatively little engagement from patients or interaction with the systems into which the product is or will be introduced.</p>
         <a class="source-link" href="/publications/accelerating-access-to-medicines/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="journal">
+      <div class="pub-item" data-cat="journal" data-topic="COVID 19">
         <span class="year">2020</span>
+        <div class="topic-tag">COVID 19</div>
         <h3><a href="/publications/covid19-rethinking-risk/">COVID-19: Rethinking risk</a></h3>
         <div class="authors">Nina Schwalbe, Susanna Lehtimaki, Juan Pablo Gutiérrez</div>
         <p class="summary">Although older age and underlying conditions are visible markers of increased risk, people subject to structural inequities are more likely to develop underlying conditions and receive poor quality health care for...</p>
         <a class="source-link" href="/publications/covid19-rethinking-risk/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="journal">
+      <div class="pub-item" data-cat="journal" data-topic="COVID 19">
         <span class="year">2020</span>
+        <div class="topic-tag">COVID 19</div>
         <h3><a href="/publications/why-are-we-closing-schools/">Why are we closing schools?</a></h3>
         <div class="authors">Nina Schwalbe</div>
         <p class="summary">Keeping kids out of the classroom will make recovering from the pandemic harder in the long term, while not keeping us any safer in the near term. Reopening schools doesn&#39;t appear to meaningfully increase the level of...</p>
         <a class="source-link" href="/publications/why-are-we-closing-schools/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="journal">
+      <div class="pub-item" data-cat="journal" data-topic="Immunization">
         <span class="year">2019</span>
+        <div class="topic-tag">Immunization</div>
         <h3><a href="/publications/apples-oranges-second-generation-vaccines/">Apples and oranges? Can second-generation vaccines become as low cost as generic medicines?</a></h3>
         <div class="authors">Aurelia Nguyen, Nina Schwalbe</div>
         <p class="summary">A step change in cost will require fundamental shifts in vaccine technologies and how they are developed, regulated and even manufactured.</p>
         <a class="source-link" href="/publications/apples-oranges-second-generation-vaccines/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="journal">
+      <div class="pub-item" data-cat="journal" data-topic="Primary Care and Mental Health">
         <span class="year">2019</span>
+        <div class="topic-tag">Primary Care and Mental Health</div>
         <h3><a href="/publications/expanding-community-health-workers/">Expanding the use of community health workers in urban settings</a></h3>
         <div class="authors">Brian Wahl, Susanna Lehtimaki, Stefan Germann, Nina Schwalbe</div>
         <p class="summary">As global and national policymakers deliberate approaches to achieving the SDGs, including universal health coverage, the delivery of community-based interventions involving community health workers in urban settings...</p>
         <a class="source-link" href="/publications/expanding-community-health-workers/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="journal">
+      <div class="pub-item" data-cat="journal" data-topic="Financing and Access">
         <span class="year">2018</span>
+        <div class="topic-tag">Financing and Access</div>
         <h3><a href="/publications/global-public-goods-for-health/">Global Public Goods for Health (GPGs)</a></h3>
         <div class="authors">Gavin Yamey, Jessica Kraus, Sara Fewer, Nina Schwalbe</div>
         <p class="summary">In a new policy paper, the authors examine the potential support for global public goods for health from four organizations that provide the most development assistance for health: Gavi, the Global Fund, World Bank, and...</p>
         <a class="source-link" href="/publications/global-public-goods-for-health/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="journal">
+      <div class="pub-item" data-cat="journal" data-topic="Data and AI">
         <span class="year">2018</span>
+        <div class="topic-tag">Data and AI</div>
         <h3><a href="/publications/ai-and-global-health/">Artificial intelligence (AI) and global health</a></h3>
         <div class="authors">Brian Wahl, Aline Cossy-Gantner, Stefan Germann, Nina Schwalbe</div>
         <p class="summary">As resource-poor settings become more connected and the data they produce of higher quality, the ability of AI to address health challenges will likely expand.</p>
         <a class="source-link" href="/publications/ai-and-global-health/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="journal">
+      <div class="pub-item" data-cat="journal" data-topic="Maternal Health">
         <span class="year">2018</span>
+        <div class="topic-tag">Maternal Health</div>
         <h3><a href="/publications/times-up-journal-gender-bias/">Time&#39;s up for journal gender bias</a></h3>
         <div class="authors">Nina Schwalbe, Jennifer Fearon</div>
         <p class="summary">From January 2013 through February 2018, The Lancet published the reports of 39 Commissions. Only 34% of all named commissioners have been women.</p>
         <a class="source-link" href="/publications/times-up-journal-gender-bias/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="journal">
+      <div class="pub-item" data-cat="journal" data-topic="Maternal Health">
         <span class="year">2017</span>
+        <div class="topic-tag">Maternal Health</div>
         <h3><a href="/publications/maternal-child-health-ncds/">Maternal and child health and non-communicable diseases</a></h3>
         <div class="authors">Luisa Brumana, Alvaro Arroyo, Nina Schwalbe, Susanna Lehtimaki, David Hipgrave</div>
         <p class="summary">Following a life-course approach, maternal and child health interventions, before delivery and during childhood and adolescence, can prevent non-communicable diseases.</p>
         <a class="source-link" href="/publications/maternal-child-health-ncds/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="journal">
+      <div class="pub-item" data-cat="journal" data-topic="Maternal Health">
         <span class="year">2017</span>
+        <div class="topic-tag">Maternal Health</div>
         <h3><a href="/publications/generation-men/">Generation Men</a></h3>
         <div class="authors">Nina Schwalbe</div>
         <p class="summary">The Fearless Girl statue that faces down Wall Street&#39;s charging bull grabbed international headlines and triggered a debate about the glass ceiling that continues to obstruct women.</p>
         <a class="source-link" href="/publications/generation-men/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="pandemic">
+      <div class="pub-item" data-cat="journal" data-topic="Pandemic Treaty">
         <span class="year">2025</span>
+        <div class="topic-tag">Pandemic Treaty</div>
         <h3><a href="/publications/zero-draft-framework-tracking-implementation/">Zero-Draft Framework for Tracking Implementation of the Pandemic Agreement</a></h3>
         <div class="authors">Spark Street Advisors</div>
         <p class="summary">The Pandemic Agreement directs the Conference of Parties (COP) to create a mechanism to facilitate and strengthen implementation, including by monitoring key commitments and progress. This zero-draft framework is...</p>
         <a class="source-link" href="/publications/zero-draft-framework-tracking-implementation/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="report">
+      <div class="pub-item" data-cat="analysis" data-topic="Pandemic Treaty">
         <span class="year">2024</span>
+        <div class="topic-tag">Pandemic Treaty</div>
         <h3><a href="/publications/independent-monitoring-proposal-for-action/">Independent Monitoring for the Pandemic Agreement – A Proposal for Action</a></h3>
         <div class="authors">Spark Street Advisors</div>
         <p class="summary">Based on evidence from monitoring other treaties, expert interviews, and analysis of various forms of independence, this report outlines the draft zero Terms of Reference for a Pandemic Agreement Independent Monitoring...</p>
         <a class="source-link" href="/publications/independent-monitoring-proposal-for-action/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="report">
+      <div class="pub-item" data-cat="analysis" data-topic="Pandemic Treaty">
         <span class="year">2022</span>
+        <div class="topic-tag">Pandemic Treaty</div>
         <h3><a href="/publications/independent-monitoring-mechanism-accountability/">Independent Monitoring Mechanism for the Pandemic Accord - Accountability for a Safer World</a></h3>
         <div class="authors">Spark Street Advisors</div>
         <p class="summary">This analysis features a proposal for independent monitoring of state compliance with an eventual pandemic accord, based on analysis of monitoring approaches to relevant international treaties, literature reviews, and...</p>
         <a class="source-link" href="/publications/independent-monitoring-mechanism-accountability/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="report">
+      <div class="pub-item" data-cat="analysis" data-topic="Pandemic Treaty">
         <span class="year">2023</span>
+        <div class="topic-tag">Pandemic Treaty</div>
         <h3><a href="/publications/independent-review-investigation-mechanisms/">Independent Review and Investigation Mechanisms to Prevent Future Pandemics: A Proposed Way Forward</a></h3>
         <div class="authors">Spark Street Advisors</div>
         <p class="summary">To inform the design of an accountability system for a pandemic treaty, this report explores institutional mechanisms with a mandate to review state compliance with key international agreements and conduct independent...</p>
         <a class="source-link" href="/publications/independent-review-investigation-mechanisms/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="report">
+      <div class="pub-item" data-cat="analysis" data-topic="Immunization">
         <span class="year">2025</span>
+        <div class="topic-tag">Immunization</div>
         <h3><a href="/publications/hpv-vaccination-out-of-school/">HPV Vaccination in Out-of-school Context</a></h3>
         <div class="authors">Spark Street Advisors</div>
         <p class="summary">HPV vaccination programs worldwide have primarily deployed school-based delivery strategies, with very little effort to reach girls who are temporarily or permanently out of school or beyond school age. This global...</p>
         <a class="source-link" href="/publications/hpv-vaccination-out-of-school/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="report">
+      <div class="pub-item" data-cat="analysis" data-topic="Other">
         <span class="year">2024</span>
+        <div class="topic-tag">Other</div>
         <h3><a href="/publications/learning-organizations-theory-practice/">Learning Organizations: Theory and Practice</a></h3>
         <div class="authors">Spark Street Advisors</div>
         <p class="summary">This report explores organizational learning, summarizing theoretical and practical aspects. It examines key concepts, models, and enablers of learning that help organizations adapt and develop, and, by analyzing six...</p>
@@ -479,38 +536,58 @@
 <script>
   (function () {
     var params = new URLSearchParams(window.location.search);
-    var initial = params.get('cat') || 'all';
-    var links = document.querySelectorAll('#pub-filter a');
+    var initialCat = params.get('cat') || 'journal';
+    var initialTopic = params.get('topic') || 'all';
+
+    var catLinks = document.querySelectorAll('#pub-filter a');
+    var topicLinks = document.querySelectorAll('#topic-filter a');
     var items = document.querySelectorAll('#pub-list .pub-item');
 
-    function matches(cat, itemCat) {
-      if (cat === 'all') return true;
-      if (cat === 'report') return itemCat === 'report';
-      // 'journal' and 'pandemic' filters also include items tagged 'both'
-      return itemCat === cat || itemCat === 'both';
-    }
+    var currentCat = initialCat;
+    var currentTopic = initialTopic;
 
-    function applyFilter(cat) {
+    function applyFilters() {
       items.forEach(function (item) {
-        var itemCat = item.getAttribute('data-cat');
-        item.style.display = matches(cat, itemCat) ? '' : 'none';
+        var catMatch = item.getAttribute('data-cat') === currentCat;
+        var topicMatch = currentTopic === 'all' || item.getAttribute('data-topic') === currentTopic;
+        item.style.display = (catMatch && topicMatch) ? '' : 'none';
       });
-      links.forEach(function (link) {
-        link.classList.toggle('active', link.getAttribute('data-cat') === cat);
+      catLinks.forEach(function (link) {
+        link.classList.toggle('active', link.getAttribute('data-cat') === currentCat);
+      });
+      topicLinks.forEach(function (link) {
+        link.classList.toggle('active', link.getAttribute('data-topic') === currentTopic);
       });
     }
 
-    links.forEach(function (link) {
+    function updateUrl() {
+      var url = '/publications/';
+      var qs = [];
+      if (currentCat !== 'journal') qs.push('cat=' + encodeURIComponent(currentCat));
+      if (currentTopic !== 'all') qs.push('topic=' + encodeURIComponent(currentTopic));
+      if (qs.length) url += '?' + qs.join('&');
+      history.replaceState(null, '', url);
+    }
+
+    catLinks.forEach(function (link) {
       link.addEventListener('click', function (e) {
         e.preventDefault();
-        var cat = link.getAttribute('data-cat');
-        var url = cat === 'all' ? '/publications/' : '/publications/?cat=' + cat;
-        history.replaceState(null, '', url);
-        applyFilter(cat);
+        currentCat = link.getAttribute('data-cat');
+        updateUrl();
+        applyFilters();
       });
     });
 
-    applyFilter(initial);
+    topicLinks.forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        currentTopic = link.getAttribute('data-topic');
+        updateUrl();
+        applyFilters();
+      });
+    });
+
+    applyFilters();
   })();
 </script>
 
@@ -530,16 +607,15 @@
       </div>
       <div class="footer-col" id="publications">
         <h4>Publications</h4>
-        <a href="/publications/">Journal Articles</a>
-        <a href="https://www.sparkstreetadvisors.org/_files/ugd/5428a3_3bdc8601a23f4fe1bf53cbf9856f6e27.pdf">Evaluation Resources</a>
-        <a href="/publications/?cat=pandemic">Pandemic Agreement</a>
-        <a href="/publications/?cat=report">Analysis</a>
+        <a href="/publications/">Articles</a>
+        <a href="/publications/?cat=analysis">Analysis</a>
         <a href="https://ninaschwalbe.substack.com" target="_blank" rel="noopener">Blog ↗</a>
       </div>
       <div class="footer-col">
         <h4>Annual Reports</h4>
         <a href="https://www.sparkstreetadvisors.org/_files/ugd/e6a589_1598966e54ac4fe9a1ddd429e8f14d45.pdf">2025</a>
         <a href="https://www.sparkstreetadvisors.org/_files/ugd/1db6c2_ce6376a818414c6dafe4fc5528a26f43.pdf">2024</a>
+        <a href="https://www.sparkstreetadvisors.org/_files/ugd/5428a3_3bdc8601a23f4fe1bf53cbf9856f6e27.pdf">Evaluation Resources</a>
       </div>
       <div class="footer-col">
         <h4>Policies</h4>

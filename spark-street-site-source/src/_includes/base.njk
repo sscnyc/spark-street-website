@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }} | Spark Street Advisors</title>
+  <meta name="description" content="{{ description or 'Spark Street Advisors focuses on increasing effectiveness, maximizing impact, and driving the intersection between strategy, policy and advocacy to improve global public health outcomes.' }}">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-row">
+      <a href="/" class="brand">Spark Street Advisors</a>
+      <button class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('.primary-nav').classList.toggle('open')">☰</button>
+      <nav class="primary-nav">
+        <a href="/">Home</a>
+        <a href="/#how-we-work">How We Work</a>
+        <a href="/#what-we-do">What We Do</a>
+        <div class="has-sub" tabindex="0">
+          <a href="/team/core-team/">Team</a>
+          <div class="sub">
+            <a href="/team/core-team/">Core Team</a>
+            <a href="/team/analysts/">Analysts</a>
+          </div>
+        </div>
+        <div class="has-sub" tabindex="0">
+          <a href="/publications/">Publications</a>
+          <div class="sub">
+            <a href="/publications/">Journal Articles</a>
+            <a href="/publications/?cat=pandemic">Pandemic Agreement</a>
+            <a href="/publications/?cat=report">Reports</a>
+            <a href="https://sparkstreetadvisors.substack.com" target="_blank" rel="noopener">Blog ↗</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <h4>Spark Street Advisors</h4>
+        <p style="max-width:260px;font-size:0.9rem;">New York | Lisbon</p>
+        <p style="font-size:0.9rem;"><a href="mailto:SLehtimaki@ssc.nyc?subject=Spark Street Advisors">Contact us</a></p>
+        <p style="font-size:0.9rem;"><a href="https://www.linkedin.com/company/spark-street-advisors/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://twitter.com/nschwalbe" target="_blank" rel="noopener">Twitter</a></p>
+      </div>
+      <div>
+        <h4>Team</h4>
+        <ul>
+          <li><a href="/team/core-team/">Core Team</a></li>
+          <li><a href="/team/analysts/">Analysts</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Publications</h4>
+        <ul>
+          <li><a href="/publications/">Journal Articles</a></li>
+          <li><a href="/publications/?cat=pandemic">Pandemic Agreement</a></li>
+          <li><a href="/publications/?cat=report">Reports</a></li>
+          <li><a href="https://sparkstreetadvisors.substack.com" target="_blank" rel="noopener">Blog ↗</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Policies</h4>
+        <ul>
+          <li><a href="https://www.sparkstreetadvisors.org/_files/ugd/5428a3_ff20585a5932416bab01fc450bf17c7d.pdf">Child Safeguarding Policy</a></li>
+          <li><a href="https://www.sparkstreetadvisors.org/_files/ugd/5428a3_ea2c2a3af8824e24bcad1bf2fd73a038.pdf">DEI Statement</a></li>
+          <li><a href="https://www.sparkstreetadvisors.org/_files/ugd/5428a3_96ca16cbf6784875a5a94fd3bb574432.pdf">Research Ethics Policy</a></li>
+          <li><a href="https://www.sparkstreetadvisors.org/_files/ugd/5428a3_f78d5462e92f46a0b7fbc89004df3a33.pdf">Partnerships Policy</a></li>
+          <li><a href="https://www.sparkstreetadvisors.org/_files/ugd/5428a3_334043c285a74ec390b33365e0a5ce4d.pdf">Environmental Policy</a></li>
+          <li><a href="https://www.sparkstreetadvisors.org/_files/ugd/1db6c2_0d1f3cf717e84105a5300aa7f05841a0.pdf">Engagement Principles</a></li>
+          <li><a href="https://www.sparkstreetadvisors.org/_files/ugd/5428a3_3bdc8601a23f4fe1bf53cbf9856f6e27.pdf">Evaluation Resources</a></li>
+          <li><a href="https://www.sparkstreetadvisors.org/_files/ugd/1db6c2_ce6376a818414c6dafe4fc5528a26f43.pdf">Annual Report – 2024</a></li>
+          <li><a href="https://www.sparkstreetadvisors.org/_files/ugd/e6a589_1598966e54ac4fe9a1ddd429e8f14d45.pdf">Annual Report – 2025</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <span>© 2024 by Spark Street Advisors</span>
+      <span>New York | Lisbon</span>
+    </div>
+  </footer>
+</body>
+</html>

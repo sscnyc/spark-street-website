@@ -1,0 +1,64 @@
+---
+layout: base.njk
+title: Publications
+description: "Spark Street Advisors - Journal Articles, Pandemic Agreement analysis, and Reports."
+---
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Publications</div>
+      <h1 id="pub-heading">Journal Articles, Analysis &amp; Reports</h1>
+    </div>
+
+    <div class="pub-filter" id="pub-filter">
+      <a href="#" data-cat="all" class="active">All</a>
+      <a href="#" data-cat="journal">Journal Articles</a>
+      <a href="#" data-cat="pandemic">Pandemic Agreement</a>
+      <a href="#" data-cat="report">Reports</a>
+    </div>
+
+    <div id="pub-list">
+      {% for pub in publications %}
+      <div class="pub-item" data-cat="{{ pub.category }}">
+        <span class="num mono">[{{ pub.year }}]</span>
+        <h3><a href="/publications/{{ pub.slug }}/">{{ pub.title }}</a></h3>
+        <div class="authors">{{ pub.authors }}</div>
+        <p class="summary">{{ pub.summary | truncate(220) }}</p>
+        <a class="source-link" href="/publications/{{ pub.slug }}/">Read more →</a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<script>
+  (function () {
+    var params = new URLSearchParams(window.location.search);
+    var initial = params.get('cat') || 'all';
+    var links = document.querySelectorAll('#pub-filter a');
+    var items = document.querySelectorAll('#pub-list .pub-item');
+
+    function applyFilter(cat) {
+      items.forEach(function (item) {
+        var itemCat = item.getAttribute('data-cat');
+        var match = cat === 'all' || itemCat === cat || itemCat === 'both';
+        item.style.display = match ? '' : 'none';
+      });
+      links.forEach(function (link) {
+        link.classList.toggle('active', link.getAttribute('data-cat') === cat);
+      });
+    }
+
+    links.forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        var cat = link.getAttribute('data-cat');
+        var url = cat === 'all' ? '/publications/' : '/publications/?cat=' + cat;
+        history.replaceState(null, '', url);
+        applyFilter(cat);
+      });
+    });
+
+    applyFilter(initial);
+  })();
+</script>

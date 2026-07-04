@@ -1,0 +1,42 @@
+---
+layout: base.njk
+title: Analysts
+description: "Spark Street engages with a select group of young professionals to provide hands-on experience in data analysis and policy development."
+---
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Team</div>
+      <h1>Spark Street Analysts</h1>
+      {% for para in analysts.intro.split("\n\n") %}
+      <p style="max-width:680px;">{{ para }}</p>
+      {% endfor %}
+    </div>
+
+    {% if analysts.current.length > 0 %}
+    <h2 style="margin-top:2rem;">Current Analysts</h2>
+    {% for a in analysts.current %}
+    <div class="analyst-item">
+      <h3>{{ a.name }}</h3>
+      <div class="credentials">{{ a.credentials }}</div>
+      <p class="bio">{{ a.bio }}</p>
+    </div>
+    {% endfor %}
+    {% endif %}
+
+    <h2 style="margin-top:2rem;">Past Analysts</h2>
+    {% for a in analysts.past %}
+    <div class="analyst-item">
+      <h3>{{ a.name }}</h3>
+      <div class="credentials">{{ a.credentials }}</div>
+      {% if a.current_role %}<div class="current-role">{{ a.current_role }}</div>{% endif %}
+      <div class="tenure">{{ a.tenure }}</div>
+      <p class="bio">{{ a.bio }}</p>
+      <div class="contact-links">
+        <a href="{{ a.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:{{ a.email }}?subject=Spark Street Advisors">Email</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>

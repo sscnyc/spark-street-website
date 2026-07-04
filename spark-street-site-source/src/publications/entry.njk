@@ -1,0 +1,24 @@
+---
+pagination:
+  data: publications
+  size: 1
+  alias: pub
+permalink: "/publications/{{ pub.slug }}/"
+layout: base.njk
+eleventyComputed:
+  title: "{{ pub.title }}"
+  description: "{{ pub.title }} — {{ pub.authors }}. {{ pub.source }}."
+---
+<section class="pub-page">
+  <div class="wrap">
+    <a class="back-link" href="/publications/">← Back to Publications</a>
+    <span class="num mono">[{{ pub.year }}]</span>
+    <h1>{{ pub.title }}</h1>
+    <div class="pub-meta">
+      <div>{{ pub.authors }}</div>
+      <div>{{ pub.source }}</div>
+    </div>
+    <p style="max-width:680px;">{{ pub.summary }}</p>
+    <p><a class="btn" href="{{ pub.url }}" target="_blank" rel="noopener">View publication ↗</a></p>
+  </div>
+</section>

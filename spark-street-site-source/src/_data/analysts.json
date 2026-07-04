@@ -1,0 +1,168 @@
+{
+  "intro": "Spark Street engages with a select group of young professionals to provide hands-on experience in data analysis and policy development. Most have either recently finished or are currently enrolled in a post-graduate program, transitioning careers or re-entering the workforce.\n\nAnalysts perform a range of activities including secondary data analysis, policy analysis, literature reviews, interviews, survey design and administration, and synthesis of results. The team at Spark Street provides mentoring, career advice and facilitates connections to the broader public health community. If you are interested in working with us in this capacity, please contact Susanna Lehtimaki (slehtimaki@ssc.nyc).",
+  "current": [],
+  "past": [
+    {
+      "name": "Kimberley Peek",
+      "credentials": "MSc Control of Infectious Diseases",
+      "tenure": "At Spark Street January 2023 – September 2025",
+      "current_role": "",
+      "bio": "Kimberly's background is infectious diseases and biomedical sciences. At Spark Street, Kimberley conducted data and policy analysis to support data-driven strategy development. She managed data collection, research, and evidence reviews, synthesized findings, and supported project logistics, including surveys and interviews.",
+      "linkedin": "https://www.linkedin.com/in/madelyn-b-goodman/",
+      "email": "maddgoodm@gmail.com"
+    },
+    {
+      "name": "Taran K. Deol",
+      "credentials": "MSPH, Health Systems, International Health",
+      "tenure": "At Spark Street October 2024 – August 2025",
+      "current_role": "Senior Associate, Global Health Strategies, August 2025 – Present",
+      "bio": "Taran's background is in global health policy and journalism. At Spark Street she developed a zero draft monitoring framework for the pandemic treaty, created guidance for assessing HPV vaccination for out-of-school girls in Ethiopia, and conducted literature reviews on climate change and health, adolescent health, wellbeing, and gender.",
+      "linkedin": "https://www.linkedin.com/in/madelyn-b-goodman/",
+      "email": "maddgoodm@gmail.com"
+    },
+    {
+      "name": "Neena Joshi",
+      "credentials": "MSc Global Health",
+      "tenure": "At Spark Street October – December 2024",
+      "current_role": "Consultant, WHO, August 2022 – Present",
+      "bio": "Neena's background spans global health governance, universal health coverage, and international development. At Spark Street she conducted literature and policy document reviews, and developed case studies based on learning organizations, HIV, and strategies to reach out-of-school girls with health interventions.",
+      "linkedin": "https://www.linkedin.com/in/madelyn-b-goodman/",
+      "email": "maddgoodm@gmail.com"
+    },
+    {
+      "name": "Daniela-Filipa Soltan",
+      "credentials": "MA Diversity, Equity, Inclusion, and Justice Leadership",
+      "tenure": "At Spark Street July 2023 – September 2023",
+      "current_role": "Programme Associate, UN Women, September 2023 – Present",
+      "bio": "Daniela-Filipa's background is in social justice, inclusivity, gender, and anti-racism. At Spark Street she contributed to policy research and analysis in global public health.",
+      "linkedin": "http://www.linkedin.com/in/daniela-filipa-soltan-617aa5136",
+      "email": "daniela-filipa.soltan@outlook.com"
+    },
+    {
+      "name": "Jenna Bhimani",
+      "credentials": "MBBS, MPH",
+      "tenure": "At Spark Street March 2021 – August 2021",
+      "current_role": "Clinical Oncology Registrar, University College London Hospitals NHS Foundation Trust, September 2025 - Present",
+      "bio": "Jenna's background is in clinical medicine and public health research, focusing on cancer control. At Spark Street she contributed to literature reviews and presentations on topics such as global health and child health.",
+      "linkedin": "https://www.linkedin.com/in/jenna-bhimani-39911b1a2/",
+      "email": "jb4507@cumc.columbia.edu"
+    },
+    {
+      "name": "Jingyi Song",
+      "credentials": "MA International Affairs, Economic and Political Development",
+      "tenure": "At Spark Street January – July 2020",
+      "current_role": "Senior Program Officer, Beginnings Fund, March 2024 – Present",
+      "bio": "Jingyi's background is in health policy. At Spark Street she contributed to health policy research and analyses, including topics on global public health data and drug access.",
+      "linkedin": "https://www.linkedin.com/in/jingyi-song-b3ba0740/",
+      "email": "js5133@columbia.edu"
+    },
+    {
+      "name": "Jennifer Fearon",
+      "credentials": "MPH Sociomedical Sciences",
+      "tenure": "At Spark Street September 2017 – September 2018",
+      "current_role": "Senior Policy Advisor for Health and Human Services, Office of the Governor, State of New Jersey, August 2022 – Present",
+      "bio": "Jennifer's background is in supporting health policy development and action to advance health equity. At Spark Street she conducted literature and data syntheses, including on women's health and health access topics.",
+      "linkedin": "https://www.linkedin.com/in/jenniferfearon/",
+      "email": "jennifer.fearon@caa.columbia.edu"
+    },
+    {
+      "name": "Saba Rouhani",
+      "credentials": "PhD Global Disease Epidemiology & Control",
+      "tenure": "At Spark Street November 2016 – July 2017",
+      "current_role": "Assistant Professor of Epidemiology, NYU School of Global Public Health, September 2022 - Present",
+      "bio": "Saba's background is in disease epidemiology and the social determinants of health. At Spark Street she produced policy briefs, managed health communications, and engaged with stakeholders.",
+      "linkedin": "https://www.linkedin.com/in/saba-rouhani-b1116948/",
+      "email": "sabarouhani@gmail.com"
+    },
+    {
+      "name": "Hannah Cooper",
+      "credentials": "MBChB, MPH",
+      "tenure": "At Spark Street 2016",
+      "current_role": "Public Health Physician, Health Intelligence, PHF Science, July 2024 - Present",
+      "bio": "Hannah's background is in public health medicine, noncommunicable disease prevention and health protection. At Spark Street she contributed to literature reviews and policy evaluations on noncommunicable disease and prevention of road traffic accidents.",
+      "linkedin": "https://www.linkedin.com/in/hannah-cooper-0046b93/",
+      "email": "hjanecooper@gmail.com"
+    },
+    {
+      "name": "Tiffany Nassiri-Ansari",
+      "credentials": "Bachelor of Arts and Social Sciences",
+      "tenure": "At Spark Street June 2025 – October 2025",
+      "current_role": "Co-Founder, Hibiscus Horizons, October 2025 – Present",
+      "bio": "Tiffany's background is in social sciences with a focus on gender and global health. At Spark Street, she conducted literature reviews and research across women's health, gender, adolescent health, sexual and reproductive health and rights (SRHR), and data. She supported evidence synthesis and data analysis to inform research and strategy development, contributing to rigorous, well-documented research outputs.",
+      "linkedin": "https://www.linkedin.com/in/madelyn-b-goodman/",
+      "email": "maddgoodm@gmail.com"
+    },
+    {
+      "name": "Jonathan Reynolds",
+      "credentials": "MSc Development Studies",
+      "tenure": "At Spark Street March – May 2025",
+      "current_role": "Research Manager (Global Health and International), National Institute for Health and Care Research, May 2025 – Present",
+      "bio": "Jonathan's background is in global health, international development, and research management. At Spark Street he provided analyses on official development assistance (ODA) and foreign aid trends, and assessed political, economic, social, and technological impacts on global health.",
+      "linkedin": "https://www.linkedin.com/in/madelyn-b-goodman/",
+      "email": "maddgoodm@gmail.com"
+    },
+    {
+      "name": "Lynda Gilby",
+      "credentials": "PhD, Health Science, Global Health and Development",
+      "tenure": "At Spark Street March – July 2024",
+      "current_role": "Doctoral Researcher, Tampere University, January 2021 – Present",
+      "bio": "Lynda's background is in sexual and reproductive health and rights and health policy research. At Spark Street she worked on pandemic preparedness and response, contributing analysis to inform on the Treaty process and policy development.",
+      "linkedin": "https://www.linkedin.com/in/madelyn-b-goodman/",
+      "email": "maddgoodm@gmail.com"
+    },
+    {
+      "name": "Layth Hanbali",
+      "credentials": "MBBS, MSc",
+      "tenure": "At Spark Street December 2021 - December 2023",
+      "current_role": "Researcher, Institute for Palestine Studies, January 2024 - Present",
+      "bio": "Layth's background is in medicine, global health, and health policy research. At Spark Street he contributed to a range of projects through data analysis, literature review, and policy analysis, supporting work on international health priorities.",
+      "linkedin": "http://linkedin.com/in/layth-hanbali-623328a7",
+      "email": "layth-hanbali@outlook.com"
+    },
+    {
+      "name": "Madelyn B. Goodman",
+      "credentials": "MSc Epidemiology and Biostatistics",
+      "tenure": "At Spark Street June – September 2020",
+      "current_role": "Product Manager, Integrated Public Health Data, NYC Department of Health and Mental Hygiene, November 2024 – Present",
+      "bio": "Madelyn's background is in research on women's health and development. At Spark Street she supported systematic literature reviews as well as development of policy documents.",
+      "linkedin": "https://www.linkedin.com/in/madelyn-b-goodman/",
+      "email": "maddgoodm@gmail.com"
+    },
+    {
+      "name": "Jana Martic",
+      "credentials": "MSc Public Health with specialization in global health",
+      "tenure": "At Spark Street March 2019 – March 2022",
+      "current_role": "Health program research and evaluation advisor, Ministry of Health and Social Services of Quebec, December 2022 - Present",
+      "bio": "Jana's background is in knowledge transfer and supporting health program evaluation. At Spark Street she contributed to research, strategy development, and evaluation of global health organizations, as well as supported COVID-19 related analyses and systematic reviews.",
+      "linkedin": "https://www.linkedin.com/in/jana-martic-62683b70/",
+      "email": "Jana.martic@msss.gouv.qc.ca"
+    },
+    {
+      "name": "Lea Giddins",
+      "credentials": "MA Public Administration",
+      "tenure": "At Spark Street December 2016 – February 2017; May – December 2019",
+      "current_role": "Director of Community & Civic Engagement, New York League of Conservation Voters, October 2023 - Present",
+      "bio": "Lea's background is in international affairs and urban policy. At Spark Street, she supported the development of literature reviews, articles, and reports.",
+      "linkedin": "https://www.linkedin.com/in/lea-giddins-621a3b35/",
+      "email": "leagiddins@gmail.com"
+    },
+    {
+      "name": "Saman Rouhani",
+      "credentials": "MSc Health Policy, Planning, and Finance",
+      "tenure": "At Spark Street October 2016 – July 2017",
+      "current_role": "Senior Policy Analyst, The Council of State Governments, June 2024 - June 2025",
+      "bio": "Saman's background is in health policy research with a focus on economics. At Spark Street he focused on monitoring and evaluation in several target countries and client social media.",
+      "linkedin": "https://www.linkedin.com/in/saman-rouhani-553563a1/",
+      "email": "samanrouhani@gmail.com"
+    },
+    {
+      "name": "Anne Linn",
+      "credentials": "MPH International Health and Development, Tulane University School of Public Health and Tropical Medicine",
+      "tenure": "At Spark Street 2016; February - April 2025",
+      "current_role": "Interim Head of Foundation and Corporate Partnerships, Muso, April 2025 - Present",
+      "bio": "Anne's background is in global health, with particular expertise in household surveys, malaria, and community health. At Spark Street, she developed policy briefs on the integration of non-communicable disease prevention and treatment into infectious disease and maternal and child health programs for the WHO Global coordination mechanism on the prevention and control of NCDs.",
+      "linkedin": "https://www.linkedin.com/in/ann%C4%93-linn-24713732/",
+      "email": "annemarielinn@gmail.com"
+    }
+  ]
+}

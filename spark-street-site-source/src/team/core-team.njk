@@ -1,0 +1,24 @@
+---
+layout: base.njk
+title: Core Team
+description: "Our global network includes experts in public health implementation, impact and outcomes research, product development and access, performance management, evaluation and advocacy."
+---
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Team</div>
+      <h1>Meet Our Core Team</h1>
+    </div>
+    <div class="grid">
+      {% for person in coreTeam %}
+      <div class="person-card">
+        <h3>{{ person.name }}</h3>
+        <div class="role">{{ person.title }}</div>
+        <div class="loc">{{ person.location }}</div>
+        {% if person.status %}<div class="status">{{ person.status }}</div>{% endif %}
+        <a class="readmore" href="/team/{{ person.slug }}/">Read full bio →</a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

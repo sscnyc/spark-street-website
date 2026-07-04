@@ -388,6 +388,7 @@ nav.links .sub a:hover{color:var(--teal); background:var(--paper-dim);}
 .pub-item h3 a{color:var(--ink);}
 .pub-item h3 a:hover{color:var(--teal);}
 .pub-item .authors{font-size:13.5px; color:var(--ink-soft); margin-bottom:10px;}
+.pub-item .source-name{font-size:13px; color:var(--teal); font-weight:500; margin-bottom:2px;}
 .pub-item p.summary{font-size:15.5px; color:var(--ink-soft); max-width:700px; margin-bottom:10px;}
 .pub-item .source-link{font-size:13.5px; color:var(--teal);}
 .pub-item .source-link:hover{color:var(--amber);}

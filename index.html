@@ -19,49 +19,15 @@
     <nav class="links" id="primary-nav">
       <a href="/#how-we-work">How We Work</a>
       <a href="/#what-we-do">What We Do</a>
-      <div class="has-sub">
-        <a href="/team/core-team/">Team</a>
-        <div class="sub">
-          <a href="/team/core-team/">Core Team</a>
-          <a href="/team/analysts/">Analysts</a>
-        </div>
-      </div>
-      <div class="has-sub">
-        <a href="/publications/">Publications</a>
-        <div class="sub">
-          <a href="/publications/">Journal Articles</a>
-          <a href="https://www.sparkstreetadvisors.org/_files/ugd/5428a3_3bdc8601a23f4fe1bf53cbf9856f6e27.pdf">Evaluation Resources</a>
-          <a href="https://www.sparkstreetadvisors.org/_files/ugd/e6a589_1598966e54ac4fe9a1ddd429e8f14d45.pdf">Annual Report – 2025</a>
-          <a href="https://www.sparkstreetadvisors.org/_files/ugd/1db6c2_ce6376a818414c6dafe4fc5528a26f43.pdf">Annual Report – 2024</a>
-          <a href="/publications/?cat=pandemic">Pandemic Agreement</a>
-          <a href="/publications/?cat=report">Analysis</a>
-          <a href="https://sparkstreetadvisors.substack.com" target="_blank" rel="noopener">Blog ↗</a>
-        </div>
-      </div>
+      <a href="/team/core-team/">Team</a>
+      <a href="/publications/">Publications</a>
     </nav>
-    <a class="nav-cta" href="mailto:SLehtimaki@ssc.nyc?subject=Spark%20Street%20Advisors">Contact Us</a>
+    <a class="nav-cta" href="mailto:SLehtimaki@ssc.nyc?subject=Spark%20Street%20Advisors" id="contact-btn">Contact Us</a>
   </div>
 </header>
 
 <script>
   (function () {
-    document.querySelectorAll('.has-sub > a').forEach(function (link) {
-      link.addEventListener('click', function (e) {
-        var parent = link.parentElement;
-        var alreadyOpen = parent.classList.contains('open');
-        document.querySelectorAll('.has-sub.open').forEach(function (el) { el.classList.remove('open'); });
-        if (!alreadyOpen) {
-          e.preventDefault();
-          parent.classList.add('open');
-        }
-      });
-    });
-    document.addEventListener('click', function (e) {
-      if (!e.target.closest('.has-sub')) {
-        document.querySelectorAll('.has-sub.open').forEach(function (el) { el.classList.remove('open'); });
-      }
-    });
-
     var toggleBtn = document.getElementById('menu-toggle-btn');
     var nav = document.getElementById('primary-nav');
     if (toggleBtn) {
@@ -69,6 +35,21 @@
         nav.classList.toggle('open');
       });
     }
+
+    function wireContactFallback(btn) {
+      if (!btn) return;
+      btn.addEventListener('click', function () {
+        var original = btn.textContent;
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText('SLehtimaki@ssc.nyc').then(function () {
+            btn.textContent = 'Email copied!';
+            setTimeout(function () { btn.textContent = original; }, 2000);
+          }).catch(function () {});
+        }
+      });
+    }
+    wireContactFallback(document.getElementById('contact-btn'));
+    document.querySelectorAll('.btn[href^="mailto:"]').forEach(wireContactFallback);
   })();
 </script>
 
@@ -183,7 +164,7 @@
     <div class="footer-grid">
       <div>
         <div class="footer-brand">Spark Street <span>Advisors</span></div>
-        <div class="footer-loc">New York&nbsp;&nbsp;|&nbsp;&nbsp;Lisbon</div>
+        <div class="footer-loc">New York&nbsp;&nbsp;|&nbsp;&nbsp;Lisbon&nbsp;&nbsp;|&nbsp;&nbsp;Delhi</div>
       </div>
       <div class="footer-col">
         <h4>Team</h4>
@@ -198,7 +179,12 @@
         <a href="https://www.sparkstreetadvisors.org/_files/ugd/1db6c2_ce6376a818414c6dafe4fc5528a26f43.pdf">Annual Report – 2024</a>
         <a href="/publications/?cat=pandemic">Pandemic Agreement</a>
         <a href="/publications/?cat=report">Analysis</a>
-        <a href="https://sparkstreetadvisors.substack.com" target="_blank" rel="noopener">Blog ↗</a>
+        <a href="https://ninaschwalbe.substack.com" target="_blank" rel="noopener">Blog ↗</a>
+      </div>
+      <div class="footer-col">
+        <h4>Annual Reports</h4>
+        <a href="https://www.sparkstreetadvisors.org/_files/ugd/e6a589_1598966e54ac4fe9a1ddd429e8f14d45.pdf">2025</a>
+        <a href="https://www.sparkstreetadvisors.org/_files/ugd/1db6c2_ce6376a818414c6dafe4fc5528a26f43.pdf">2024</a>
       </div>
       <div class="footer-col">
         <h4>Policies</h4>

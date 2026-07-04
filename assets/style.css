@@ -77,11 +77,11 @@ nav.links .has-sub:hover > a{color:var(--teal);}
 nav.links .sub{
   display:none;
   position:absolute;
-  top:calc(100% + 14px);
+  top:100%;
   left:-16px;
   background:var(--white);
   border:1px solid var(--line);
-  padding:8px 0;
+  padding:14px 0 8px;
   min-width:190px;
   box-shadow:0 12px 28px rgba(21,32,29,0.08);
 }
@@ -390,8 +390,8 @@ footer{
 }
 .footer-grid{
   display:grid;
-  grid-template-columns:1.3fr 1fr 1fr 1fr;
-  gap:40px;
+  grid-template-columns:1.3fr 0.8fr 1fr 0.8fr 1fr;
+  gap:32px;
   padding-bottom:50px;
 }
 .footer-brand{

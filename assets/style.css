@@ -439,6 +439,7 @@ footer{
   font-size:13px;
   color:#8FA098;
   letter-spacing:0.02em;
+  white-space:nowrap;
 }
 .footer-col h4{
   font-size:12px;

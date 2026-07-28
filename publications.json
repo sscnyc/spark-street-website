@@ -40,6 +40,17 @@
     "year": 2025
   },
   {
+    "slug": "ai-research-capacity-strengthening",
+    "category": "journal",
+    "title": "Artificial intelligence for research capacity strengthening: Two reviews and a pathway to shift power in global health",
+    "authors": "Brian Wahl, Tiffany Nassiri-Ansari, Daniel D. Redpath, Pascale Allotey, Nina Schwalbe",
+    "summary": "",
+    "source": "PLOS Digital Health 2026",
+    "url": "https://journals.plos.org/digitalhealth/article?id=10.1371%2Fjournal.pdig.0001302",
+    "year": 2026,
+    "topic": "Data and AI"
+  },
+  {
     "slug": "lessons-nyc-vaccine-rollout",
     "category": "pandemic",
     "title": "The lessons New York still has not learned from the Covid vaccine rollout",
@@ -208,7 +219,7 @@
     "source": "Lancet 2023",
     "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(23)00963-7/fulltext",
     "year": 2023,
-    "topic": "Primary Health Care"
+    "topic": "Primary Care, Financing and Access"
   },
   {
     "slug": "cannot-give-up-pandemic-treaty",
@@ -309,7 +320,7 @@
     "source": "JMIR Mental Health 2021",
     "url": "https://mental.jmir.org/2021/4/e25847/",
     "year": 2021,
-    "topic": "Mental Health,Adolescent Health"
+    "topic": "Mental and Adolescent Health"
   },
   {
     "slug": "treat-pandemics-like-chemical-weapons",
@@ -390,7 +401,7 @@
     "source": "Health Policy and Planning 2019",
     "url": "https://academic.oup.com/heapol/advance-article/doi/10.1093/heapol/czz133/5607274?guestAccessKey=20020342-09b1-4e42-99bd-44d50745b6ed",
     "year": 2019,
-    "topic": "Primary Health Care"
+    "topic": "Primary Care, Financing and Access"
   },
   {
     "slug": "global-public-goods-for-health",
@@ -491,7 +502,7 @@
     "source": "Spark Street Advisors global review, assessment tool, and Ethiopia report",
     "url": "https://www.sparkstreetadvisors.org/_files/ugd/1db6c2_96972423869c441586b2d001b2958a30.pdf",
     "year": 2025,
-    "topic": "Immunization,Adolescent Health"
+    "topic": "Immunization and Maternal Health,Mental and Adolescent Health"
   },
   {
     "slug": "hpv-assessment-tool",
@@ -502,7 +513,7 @@
     "source": "Spark Street Advisors assessment tool",
     "url": "https://www.sparkstreetadvisors.org/_files/ugd/1db6c2_0564d0c39f0e4b4a8c468057d2f60cc0.pdf",
     "year": 2025,
-    "topic": "Immunization,Adolescent Health"
+    "topic": "Immunization and Maternal Health,Mental and Adolescent Health"
   },
   {
     "slug": "learning-organizations-theory-practice",

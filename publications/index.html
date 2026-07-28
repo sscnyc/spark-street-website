@@ -89,7 +89,7 @@
         <a class="source-link" href="/publications/ai-research-capacity-strengthening/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="journal" data-topic="Immunization and Maternal Health,Mental and Adolescent Health">
+      <div class="pub-item" data-cat="journal" data-topic="Immunization and Maternal Health;Mental and Adolescent Health">
         <span class="year">2025</span>
         <div class="topic-tag">Immunization and Maternal Health, Mental and Adolescent Health</div>
         <h3><a href="/publications/global-health-equity-trump-immunization/">Global Health Equity Considerations of Political Decisions: Trump, The US, and Immunization</a></h3>
@@ -179,7 +179,7 @@
         <a class="source-link" href="/publications/zero-draft-framework-tracking-implementation/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="analysis" data-topic="Immunization and Maternal Health,Mental and Adolescent Health">
+      <div class="pub-item" data-cat="analysis" data-topic="Immunization and Maternal Health;Mental and Adolescent Health">
         <span class="year">2025</span>
         <div class="topic-tag">Immunization and Maternal Health, Mental and Adolescent Health</div>
         <h3><a href="/publications/hpv-vaccination-out-of-school/">HPV Vaccination in Out-of-school Context</a></h3>
@@ -189,7 +189,7 @@
         <a class="source-link" href="/publications/hpv-vaccination-out-of-school/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="analysis" data-topic="Immunization and Maternal Health,Mental and Adolescent Health">
+      <div class="pub-item" data-cat="analysis" data-topic="Immunization and Maternal Health;Mental and Adolescent Health">
         <span class="year">2025</span>
         <div class="topic-tag">Immunization and Maternal Health, Mental and Adolescent Health</div>
         <h3><a href="/publications/hpv-assessment-tool/">HPV Vaccination in Out-of-school Context: Assessment Tool</a></h3>
@@ -620,7 +620,7 @@
     function applyFilters() {
       items.forEach(function (item) {
         var catMatch = item.getAttribute('data-cat') === currentCat;
-        var itemTopics = (item.getAttribute('data-topic') || '').split(',').map(function (t) { return t.trim(); });
+        var itemTopics = (item.getAttribute('data-topic') || '').split(';').map(function (t) { return t.trim(); });
         var topicMatch = currentTopic === 'all' || itemTopics.indexOf(currentTopic) !== -1;
         item.style.display = (catMatch && topicMatch) ? '' : 'none';
       });

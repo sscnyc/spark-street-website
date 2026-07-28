@@ -245,9 +245,8 @@ nav.links .sub a:hover{color:var(--teal); background:var(--paper-dim);}
 
 /* ===== CTA STRIP ===== */
 .cta-strip{
-  padding:64px 0;
+  padding:48px 0;
   text-align:center;
-  border-top:1px solid var(--line);
 }
 .cta-strip h2{
   font-size:clamp(28px,3.6vw,42px);

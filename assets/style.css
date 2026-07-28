@@ -345,8 +345,10 @@ nav.links .sub a:hover{color:var(--teal); background:var(--paper-dim);}
 .bio-body p{max-width:680px; font-size:16.5px; color:var(--ink-soft);}
 
 /* ===== TEAM: Analysts ===== */
-.analyst-item{
+.analyst-item + .analyst-item{
   border-top:1px solid var(--line);
+}
+.analyst-item{
   padding:30px 0;
 }
 .analyst-item:last-child{border-bottom:1px solid var(--line);}
@@ -390,8 +392,10 @@ nav.links .sub a:hover{color:var(--teal); background:var(--paper-dim);}
   margin:6px 0 4px;
 }
 
-.pub-item{
+.pub-item + .pub-item{
   border-top:1px solid var(--line);
+}
+.pub-item{
   padding:30px 0;
 }
 .pub-item:last-child{border-bottom:1px solid var(--line);}

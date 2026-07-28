@@ -48,7 +48,7 @@ header{
 }
 .nav{
   display:flex; align-items:center; justify-content:space-between;
-  padding:20px 40px;
+  padding:22px 40px 26px;
   max-width:1180px; margin:0 auto;
 }
 .logo{

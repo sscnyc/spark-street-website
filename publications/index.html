@@ -21,6 +21,7 @@
       <a href="/#what-we-do">What We Do</a>
       <a href="/team/core-team/">Team</a>
       <a href="/publications/">Publications</a>
+      <a href="/policies/">Policies</a>
     </nav>
     <a class="nav-cta" href="mailto:SLehtimaki@ssc.nyc?subject=Spark%20Street%20Advisors" id="contact-btn">Contact Us</a>
   </div>
@@ -73,7 +74,9 @@
       <a href="#" data-topic="COVID 19">COVID 19</a>
       <a href="#" data-topic="Data and AI">Data and AI</a>
       <a href="#" data-topic="Financing and Access">Financing and Access</a>
-      <a href="#" data-topic="Primary Care and Mental Health">Primary Care and Mental Health</a>
+      <a href="#" data-topic="Primary Health Care">Primary Health Care</a>
+      <a href="#" data-topic="Mental Health">Mental Health</a>
+      <a href="#" data-topic="Adolescent Health">Adolescent Health</a>
       <a href="#" data-topic="Other">Other</a>
     </div>
 
@@ -89,7 +92,7 @@
         <a class="source-link" href="/publications/ai-research-capacity-strengthening/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="journal" data-topic="Immunization">
+      <div class="pub-item" data-cat="journal" data-topic="Immunization,Adolescent Health">
         <span class="year">2025</span>
         <div class="topic-tag">Immunization</div>
         <h3><a href="/publications/global-health-equity-trump-immunization/">Global Health Equity Considerations of Political Decisions: Trump, The US, and Immunization</a></h3>
@@ -179,14 +182,24 @@
         <a class="source-link" href="/publications/zero-draft-framework-tracking-implementation/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="analysis" data-topic="Immunization">
+      <div class="pub-item" data-cat="analysis" data-topic="Immunization,Adolescent Health">
         <span class="year">2025</span>
-        <div class="topic-tag">Immunization</div>
+        <div class="topic-tag">Immunization, Adolescent Health</div>
         <h3><a href="/publications/hpv-vaccination-out-of-school/">HPV Vaccination in Out-of-school Context</a></h3>
         <div class="source-name">Spark Street Advisors global review, assessment tool, and Ethiopia report</div>
         <div class="authors">Spark Street Advisors</div>
         <p class="summary">HPV vaccination programs worldwide have primarily deployed school-based delivery strategies, with very little effort to reach girls who are temporarily or permanently out of school or beyond school age. This global...</p>
         <a class="source-link" href="/publications/hpv-vaccination-out-of-school/">Read more →</a>
+      </div>
+      
+      <div class="pub-item" data-cat="analysis" data-topic="Immunization,Adolescent Health">
+        <span class="year">2025</span>
+        <div class="topic-tag">Immunization, Adolescent Health</div>
+        <h3><a href="/publications/hpv-assessment-tool/">HPV Vaccination in Out-of-school Context: Assessment Tool</a></h3>
+        <div class="source-name">Spark Street Advisors assessment tool</div>
+        <div class="authors">Spark Street Advisors</div>
+        <p class="summary">Companion tool to the global review, developed with the Bill &amp; Melinda Gates Foundation, Pathfinder, Acasus, and Social Impact — a standardized approach to identify entry points and partners for reaching out-of-school girls with HPV vaccinations...</p>
+        <a class="source-link" href="/publications/hpv-assessment-tool/">Read more →</a>
       </div>
       
       <div class="pub-item" data-cat="journal" data-topic="Other">
@@ -329,9 +342,9 @@
         <a class="source-link" href="/publications/independent-monitoring-new-pandemic-agreement/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="journal" data-topic="Primary Care and Mental Health">
+      <div class="pub-item" data-cat="journal" data-topic="Primary Health Care">
         <span class="year">2023</span>
-        <div class="topic-tag">Primary Care and Mental Health</div>
+        <div class="topic-tag">Primary Health Care</div>
         <h3><a href="/publications/primary-health-care-cornerstone/">Primary health care: a cornerstone of pandemic prevention, preparedness, response, and recovery</a></h3>
         <div class="source-name">Lancet 2023</div>
         <div class="authors">Arush Lal, Nina Schwalbe</div>
@@ -449,9 +462,9 @@
         <a class="source-link" href="/publications/increasing-efficiency-vaccine-production/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="journal" data-topic="Primary Care and Mental Health">
+      <div class="pub-item" data-cat="journal" data-topic="Mental Health,Adolescent Health">
         <span class="year">2021</span>
-        <div class="topic-tag">Primary Care and Mental Health</div>
+        <div class="topic-tag">Mental Health, Adolescent Health</div>
         <h3><a href="/publications/digital-mental-health-adolescents/">Evidence on Digital Mental Health Interventions for Adolescents and Young People: Systematic Overview</a></h3>
         <div class="source-name">JMIR Mental Health 2021</div>
         <div class="authors">Susanna Lehtimaki, Jana Martic, Brian Wahl, Katherine Foster, Nina Schwalbe</div>
@@ -529,9 +542,9 @@
         <a class="source-link" href="/publications/apples-oranges-second-generation-vaccines/">Read more →</a>
       </div>
       
-      <div class="pub-item" data-cat="journal" data-topic="Primary Care and Mental Health">
+      <div class="pub-item" data-cat="journal" data-topic="Primary Health Care">
         <span class="year">2019</span>
-        <div class="topic-tag">Primary Care and Mental Health</div>
+        <div class="topic-tag">Primary Health Care</div>
         <h3><a href="/publications/expanding-community-health-workers/">Expanding the use of community health workers in urban settings</a></h3>
         <div class="source-name">Health Policy and Planning 2019</div>
         <div class="authors">Brian Wahl, Susanna Lehtimaki, Stefan Germann, Nina Schwalbe</div>
@@ -610,7 +623,8 @@
     function applyFilters() {
       items.forEach(function (item) {
         var catMatch = item.getAttribute('data-cat') === currentCat;
-        var topicMatch = currentTopic === 'all' || item.getAttribute('data-topic') === currentTopic;
+        var itemTopics = (item.getAttribute('data-topic') || '').split(',').map(function (t) { return t.trim(); });
+        var topicMatch = currentTopic === 'all' || itemTopics.indexOf(currentTopic) !== -1;
         item.style.display = (catMatch && topicMatch) ? '' : 'none';
       });
       catLinks.forEach(function (link) {
@@ -619,7 +633,6 @@
       topicLinks.forEach(function (link) {
         link.classList.toggle('active', link.getAttribute('data-topic') === currentTopic);
       });
-      topicFilterEl.style.display = (currentCat === 'journal') ? '' : 'none';
     }
 
     function updateUrl() {
@@ -635,7 +648,6 @@
       link.addEventListener('click', function (e) {
         e.preventDefault();
         currentCat = link.getAttribute('data-cat');
-        if (currentCat !== 'journal') currentTopic = 'all';
         updateUrl();
         applyFilters();
       });
@@ -682,6 +694,7 @@
       </div>
       <div class="footer-col">
         <h4>Policies</h4>
+        <a href="/policies/">All Policies</a>
         <a href="https://www.sparkstreetadvisors.org/_files/ugd/5428a3_ff20585a5932416bab01fc450bf17c7d.pdf">Child Safeguarding</a>
         <a href="https://www.sparkstreetadvisors.org/_files/ugd/5428a3_ea2c2a3af8824e24bcad1bf2fd73a038.pdf">DEI Statement</a>
         <a href="https://www.sparkstreetadvisors.org/_files/ugd/5428a3_96ca16cbf6784875a5a94fd3bb574432.pdf">Research Ethics</a>

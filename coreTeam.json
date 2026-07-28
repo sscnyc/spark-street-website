@@ -10,14 +10,14 @@
     "email": "nschwalbe@ssc.nyc"
   },
   {
-    "name": "Abdallah Bchir",
-    "slug": "abdallah-bchir",
-    "title": "Senior Advisor",
-    "location": "Tunis, Tunisia",
+    "name": "Susanna Lehtimaki",
+    "slug": "susanna-lehtimaki",
+    "title": "Acting CEO and Research Director",
+    "location": "Lisbon, Portugal",
     "status": "",
-    "bio": "Abdallah is a public health specialist with extensive experience in evaluation. He started his career as a medical doctor and professor of Public Health in Tunisia. He served as the Head of Gavi's Evaluation Unit, where he introduced the concepts of theory of change and prospective evaluation to Gavi's work. He has also worked as a consultant for WHO and served on the Global Fund's Technical Evaluation Reference Group. Abdallah holds MSc and PhD degrees in community health from the University of Montreal and currently splits his time between Geneva and Tunis. He is fluent in English, Arabic, and French.",
+    "bio": "Susanna is a global health specialist, focusing on results-based program development, strategic planning, and analysis. She has worked with UNICEF at headquarters in New York as well as in Kyrgyzstan and Ukraine where she developed programs on maternal, child and adolescent health and wellbeing. She has a clinical background in maternal, child and school health in Finland and in India. Susanna holds an MA in Public Health and a BA in Social Sciences from Tampere University, Finland, and an MA in Russian and Eurasian Studies from European University in St. Petersburg, Russia. In addition to Finnish, Susanna is fluent in English and Russian.",
     "linkedin": "https://www.linkedin.com/company/spark-street-advisors/",
-    "email": "nschwalbe@ssc.nyc"
+    "email": "SLehtimaki@ssc.nyc"
   },
   {
     "name": "Clara Greiner",
@@ -30,6 +30,26 @@
     "email": "nschwalbe@ssc.nyc"
   },
   {
+    "name": "Michelle Angwenyi",
+    "slug": "michelle-angwenyi",
+    "title": "Senior Program Analyst",
+    "location": "Nairobi, Kenya",
+    "status": "",
+    "bio": "Michelle is a Senior Program Analyst at Spark Street Advisors, based in Nairobi, Kenya. She currently also serves as Senior Associate, Strategy and Operations at the Savannah Global Health Institute (SGHI). She has previously worked with IAVI, ThinkPlace, and Komaza. Michelle holds a degree from Yale University.",
+    "linkedin": "",
+    "email": ""
+  },
+  {
+    "name": "Abdallah Bchir",
+    "slug": "abdallah-bchir",
+    "title": "Senior Advisor",
+    "location": "Tunis, Tunisia",
+    "status": "",
+    "bio": "Abdallah is a public health specialist with extensive experience in evaluation. He started his career as a medical doctor and professor of Public Health in Tunisia. He served as the Head of Gavi's Evaluation Unit, where he introduced the concepts of theory of change and prospective evaluation to Gavi's work. He has also worked as a consultant for WHO and served on the Global Fund's Technical Evaluation Reference Group. Abdallah holds MSc and PhD degrees in community health from the University of Montreal and currently splits his time between Geneva and Tunis. He is fluent in English, Arabic, and French.",
+    "linkedin": "https://www.linkedin.com/company/spark-street-advisors/",
+    "email": "nschwalbe@ssc.nyc"
+  },
+  {
     "name": "Prakash Durairaj",
     "slug": "prakash-durairaj",
     "title": "Visual Lead",
@@ -38,16 +58,6 @@
     "bio": "Prakash leads Spark Street's graphic design work. He started his career in finance before becoming a designer. He has worked for a Fortune 500 company as a Visualizer and enjoys exploring how to use innovative tools to visualize creative concepts. He has over 14 years of experience in the fields of design and user experience and holds a Bachelor's of Computer Application. He is fluent in English and Tamil.",
     "linkedin": "https://www.linkedin.com/company/spark-street-advisors/",
     "email": "nschwalbe@ssc.nyc"
-  },
-  {
-    "name": "Susanna Lehtimaki",
-    "slug": "susanna-lehtimaki",
-    "title": "Acting CEO and Research Director",
-    "location": "Lisbon, Portugal",
-    "status": "",
-    "bio": "Susanna is a global health specialist, focusing on results-based program development, strategic planning, and analysis. She has worked with UNICEF at headquarters in New York as well as in Kyrgyzstan and Ukraine where she developed programs on maternal, child and adolescent health and wellbeing. She has a clinical background in maternal, child and school health in Finland and in India. Susanna holds an MA in Public Health and a BA in Social Sciences from Tampere University, Finland, and an MA in Russian and Eurasian Studies from European University in St. Petersburg, Russia. In addition to Finnish, Susanna is fluent in English and Russian.",
-    "linkedin": "https://www.linkedin.com/company/spark-street-advisors/",
-    "email": "SLehtimaki@ssc.nyc"
   },
   {
     "name": "Elizabeth Gardiner",
@@ -78,15 +88,5 @@
     "bio": "Dante is a social media strategist and international consultant with expertise in strategic communication. He has served in different roles with the Mexican government, WHO, and the Red Cross Red Crescent movement. In these roles, he has led record-breaking global campaigns on TikTok, forged partnerships with tech companies, responded to emergencies around the world, trained hundreds of colleagues on the effective use of social media, and designed strategies for maximizing impact through digital channels. Dante is fluent in English, French, and Spanish.",
     "linkedin": "https://www.linkedin.com/company/spark-street-advisors/",
     "email": "nschwalbe@ssc.nyc"
-  },
-  {
-    "name": "Michelle Angwenyi",
-    "slug": "michelle-angwenyi",
-    "title": "Senior Program Analyst",
-    "location": "Nairobi, Kenya",
-    "status": "",
-    "bio": "Michelle is a Senior Program Analyst at Spark Street Advisors, based in Nairobi, Kenya. She currently also serves as Senior Associate, Strategy and Operations at the Savannah Global Health Institute (SGHI). She has previously worked with IAVI, ThinkPlace, and Komaza. Michelle holds a degree from Yale University.",
-    "linkedin": "",
-    "email": ""
   }
 ]

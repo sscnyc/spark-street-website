@@ -1,63 +1,73 @@
 # Spark Street Advisors — Website Source
 
-This is a data-driven site: **Team** and **Publications** pages are generated
-automatically from two simple data files. To add a new team member or
-publication, you edit one entry — you never touch HTML or create new pages
-by hand.
+**Plain, hand-authored static HTML.** There is no build step — every page is
+a real `.html` file in this repo, and Netlify publishes them exactly as-is
+whenever `main` is pushed.
 
-## Editing content
+## The easiest way to make changes
 
-- **Team members:** `src/_data/coreTeam.json`
-- **Analysts:** `src/_data/analysts.json`
-- **Publications:** `src/_data/publications.json`
+If you're not comfortable editing code directly, the simplest path is to
+work with an AI coding assistant (e.g. Claude, at claude.ai or Claude Code).
+Just describe what you want changed in plain English — "add so-and-so to
+the team page," "fix this typo," "change this color" — and have it:
 
-To add a new team member, copy one of the existing `{ ... }` entries in
-`coreTeam.json`, fill in the fields, and give it a unique `slug` (used in
-the URL, e.g. `"jane-doe"` becomes `/team/jane-doe/`). A full bio page for
-them is generated automatically.
+1. Clone this repo (`https://github.com/sscnyc/spark-street-website`)
+2. Make the edit directly in the relevant `.html` file(s)
+3. Commit and push to `main`
 
-Same idea for publications: copy an entry in `publications.json`, fill in
-`title`, `authors`, `summary`, `source`, `url`, `year`, and a unique `slug`.
-Set `category` to `"journal"`, `"pandemic"`, or `"report"` (or `"both"` if it
-belongs on more than one list) — this controls which filter tab it shows
-under on the Publications page.
+Netlify automatically rebuilds and redeploys within a minute or two of any
+push to `main`. No build command is configured or needed.
 
-## Building the site locally
-
-```
-npm install
-npx @11ty/eleventy        # builds once, output in _site/
-npx @11ty/eleventy --serve  # builds and serves locally at localhost:8080, rebuilds on save
-```
-
-## Deploying (GitHub + Netlify)
-
-1. Push this whole folder to your GitHub repo (`spark-street-website`).
-2. In Netlify, under **Site configuration → Build & deploy**, set:
-   - **Build command:** `npx @11ty/eleventy`
-   - **Publish directory:** `_site`
-3. From now on: edit a JSON file in GitHub, commit, and Netlify rebuilds
-   and redeploys automatically within a minute or two — new pages included.
+To push, the assistant will need a **GitHub personal access token** with
+`repo` scope (Settings → Developer settings → Personal access tokens →
+Tokens (classic) → Generate new token). Generate one, share it for that
+session, and revoke it afterward (Settings → Developer settings → Personal
+access tokens) once the changes are confirmed live.
 
 ## Structure
 
 ```
-src/
-  _data/            → the three JSON files you'll edit
-  _includes/base.njk → shared nav + footer, applies to every page
-  assets/style.css   → all site styling (placeholder sage/teal/amber palette)
-  index.njk          → homepage
-  team/
-    core-team.njk    → Core Team listing page
-    member.njk       → template that generates one page per person
-    analysts.njk     → Analysts listing (current + past)
-  publications/
-    index.njk        → Publications listing with category filter
-    entry.njk        → template that generates one page per publication
+index.html                  → homepage
+assets/style.css            → all site styling (CSS custom properties at the top control colors/fonts)
+assets/img/team/            → team headshots
+team/
+  core-team/index.html      → Core Team listing (person cards)
+  analysts/index.html       → Analysts listing (current + past)
+  <person-slug>/index.html  → one bio page per core team member
+publications/
+  index.html                → Publications listing + topic/category filter
+  <pub-slug>/index.html     → one page per publication
+policies/index.html         → Policies listing page
+coreTeam.json, analysts.json, publications.json
+                             → reference data files, kept in sync with the
+                               HTML by convention; NOT read by the live site
 ```
 
-## Colors
+## Adding a new team member
 
-Currently using placeholder brand colors (sage/paper background, deep teal,
-amber accent — see `src/assets/style.css` `:root` variables). Swap in your
-actual brand hex codes there whenever you're ready.
+1. Copy an existing folder under `team/` (e.g. `team/clara-greiner/`) to a
+   new folder named after the person's slug (e.g. `team/jane-doe/`)
+2. Edit the name, role, location, and bio text inside that new `index.html`
+3. Add a matching card to `team/core-team/index.html` (copy an existing
+   `<div class="person-card">` block, update the details and the link)
+4. Optionally update `coreTeam.json` to match, for reference
+
+## Adding a new publication
+
+1. Copy an existing folder under `publications/` to a new slug-named folder
+2. Edit the title, authors, source, summary, and the "View publication"
+   link inside that new `index.html`
+3. Add a matching card to `publications/index.html` (copy an existing
+   `<div class="pub-item">` block — note the `data-cat` and `data-topic`
+   attributes control which filter tabs it shows under; multiple topics
+   can be given as `topic-one;topic-two`, separated by a semicolon, **not**
+   a comma, since several topic names contain commas themselves)
+4. Optionally update `publications.json` to match, for reference
+
+## Colors & fonts
+
+All colors are CSS custom properties at the very top of `assets/style.css`
+(`--teal`, `--amber`, `--ink`, `--paper`, etc.) — change them there and
+they update sitewide. Fonts (Fraunces for headings, IBM Plex Sans for body)
+are loaded via Google Fonts in every page's `<head>`.
+

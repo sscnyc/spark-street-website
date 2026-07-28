@@ -6,6 +6,7 @@
   --teal:#1B5E56;
   --teal-deep:#123F3A;
   --amber:#C48A3A;
+  --brick:#B24C3E;
   --line:#D3DACF;
   --white:#FFFFFF;
 }
@@ -56,8 +57,12 @@ header{
   font-weight:500;
   font-size:19px;
   letter-spacing:-0.01em;
+  display:flex;
+  align-items:center;
+  gap:9px;
 }
-.logo span{color:var(--amber);}
+.logo-icon{display:block; flex-shrink:0;}
+.logo span{color:var(--brick);}
 nav.links{display:flex; gap:36px; align-items:center;}
 nav.links > a{
   font-size:13.5px;
@@ -438,7 +443,7 @@ footer{
   color:var(--white);
   margin-bottom:14px;
 }
-.footer-brand span{color:var(--amber);}
+.footer-brand span{color:var(--brick);}
 .footer-loc{
   font-size:13px;
   color:#8FA098;

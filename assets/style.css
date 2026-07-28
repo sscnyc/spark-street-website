@@ -154,7 +154,7 @@ nav.links .sub a:hover{color:var(--teal); background:var(--paper-dim);}
 
 /* ===== GENERIC PAGE HERO (Team / Publications) ===== */
 .page-hero{
-  padding:78px 0 50px;
+  padding:64px 0 32px;
   border-bottom:1px solid var(--line);
 }
 .page-hero h1{
@@ -177,6 +177,7 @@ nav.links .sub a:hover{color:var(--teal); background:var(--paper-dim);}
 
 /* ===== HOW WE WORK ===== */
 .section{padding:60px 0;}
+.page-hero + .section{padding-top:32px;}
 .split{
   display:grid;
   grid-template-columns:280px 1fr;

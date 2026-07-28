@@ -5,8 +5,7 @@
   --ink-soft:#4B5A54;
   --teal:#1B5E56;
   --teal-deep:#123F3A;
-  --amber:#C48A3A;
-  --brick:#B24C3E;
+  --amber:#B24C3E;
   --line:#D3DACF;
   --white:#FFFFFF;
 }
@@ -55,14 +54,14 @@ header{
 .logo{
   font-family:'Fraunces', serif;
   font-weight:500;
-  font-size:19px;
+  font-size:26px;
   letter-spacing:-0.01em;
   display:flex;
   align-items:center;
-  gap:9px;
+  gap:11px;
 }
-.logo-icon{display:block; flex-shrink:0;}
-.logo span{color:var(--brick);}
+.logo-icon{display:block; flex-shrink:0; width:34px; height:34px;}
+.logo span{color:var(--amber);}
 nav.links{display:flex; gap:36px; align-items:center;}
 nav.links > a{
   font-size:13.5px;
@@ -443,7 +442,7 @@ footer{
   color:var(--white);
   margin-bottom:14px;
 }
-.footer-brand span{color:var(--brick);}
+.footer-brand span{color:var(--amber);}
 .footer-loc{
   font-size:13px;
   color:#8FA098;
@@ -531,7 +530,8 @@ footer{
 }
 @media (max-width:420px){
   .nav{padding:14px 18px;}
-  .logo{font-size:16px;}
+  .logo{font-size:20px;}
+  .logo-icon{width:26px; height:26px;}
   .nav-cta{padding:8px 14px; font-size:12.5px;}
   .wrap{padding:0 20px;}
   .footer-grid{grid-template-columns:1fr; gap:26px;}

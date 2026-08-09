@@ -228,7 +228,7 @@
     "authors": "Nina Schwalbe",
     "summary": "Nearly two years after countries agreed to develop a new pandemic treaty, the prospect of achieving a bold new global agreement to prepare and respond to future disease threats is slipping away. The UN General Assembly's High-Level Meeting on Pandemics in September may be the last chance for political leaders to show the sustained commitment necessary to prevent and respond to future pandemics.",
     "source": "Financial Times 2023",
-    "url": "https://078163d4-10a5-4a9a-a6bc-abcb298e06e8.filesusr.com/ugd/1db6c2_55494fb1b83b48649e722dfaab33f16a.pdf",
+    "url": "/assets/docs/cannot-give-up-pandemic-treaty.pdf",
     "year": 2023
   },
   {
@@ -329,7 +329,7 @@
     "authors": "Nina Schwalbe, Susanna Lehtimaki",
     "summary": "While the world was still battling COVID-19, it was time to start preparing for the next pandemic, above all, how to prevent it. This piece argues for taking pandemic containment as seriously as other dangers of mass destruction, such as nuclear proliferation and chemical weapons, and for adapting the treaty toolbox used to prevent the spread of those weapons.",
     "source": "Foreign Policy 2021",
-    "url": "https://www.sparkstreetadvisors.org/_files/ugd/5428a3_f927e020d2044e46a16567a86c81d2be.pdf",
+    "url": "/assets/docs/treat-pandemics-like-chemical-weapons.pdf",
     "year": 2021
   },
   {
@@ -339,7 +339,7 @@
     "authors": "Nina Schwalbe, Brian Wahl, Jingyi Song, Susanna Lehtimaki",
     "summary": "As the volume of public health data expands and data become more interconnected, a broad range of data is being used to support research and inform global health policies and practice. This paper expands on an existing framework to classify data into four broad archetypes: patient data, health systems data, routine public health data, and health research data.",
     "source": "Frontiers in Digital Health 2020",
-    "url": "https://www.sparkstreetadvisors.org/_files/ugd/5428a3_6e239351cbb04ffeb5e50860b3a44223.pdf",
+    "url": "/assets/docs/data-sharing-global-public-health.pdf",
     "year": 2020
   },
   {
@@ -460,7 +460,7 @@
     "authors": "Spark Street Advisors",
     "summary": "The Pandemic Agreement directs the Conference of Parties (COP) to create a mechanism to facilitate and strengthen implementation, including by monitoring key commitments and progress. This zero-draft framework is intended as a living tool with adaptive capacity to evolve with political and institutional developments, contributing to early discussions on reporting the COP will lead under Article 21.",
     "source": "Spark Street Advisors report",
-    "url": "https://www.sparkstreetadvisors.org/_files/ugd/1db6c2_1622f1696a2948a8ab49a2152b86a818.pdf",
+    "url": "/assets/docs/zero-draft-framework.pdf",
     "year": 2025
   },
   {
@@ -470,7 +470,7 @@
     "authors": "Spark Street Advisors",
     "summary": "Based on evidence from monitoring other treaties, expert interviews, and analysis of various forms of independence, this report outlines the draft zero Terms of Reference for a Pandemic Agreement Independent Monitoring Committee. The primary purpose of an Independent Committee would be to verify the timeliness, completeness, and accuracy of Member State reports, complementing state self-reporting and peer review outlined in the current draft of the Pandemic Agreement.",
     "source": "Spark Street Advisors final report and policy brief",
-    "url": "https://www.sparkstreetadvisors.org/_files/ugd/5428a3_ea81908171644b0e9c3e91523c971934.pdf",
+    "url": "/assets/docs/independent-monitoring-final-report.pdf",
     "year": 2024
   },
   {
@@ -480,7 +480,7 @@
     "authors": "Spark Street Advisors",
     "summary": "This analysis features a proposal for independent monitoring of state compliance with an eventual pandemic accord, based on analysis of monitoring approaches to relevant international treaties, literature reviews, and in-depth interviews with 40 experts from around the world. It recommends an independent monitoring committee, fully autonomous and able to verify state reports through data triangulation, reporting to a body directly accountable to heads of state and government.",
     "source": "Spark Street Advisors, November 2022",
-    "url": "https://www.sparkstreetadvisors.org/_files/ugd/5428a3_ea81908171644b0e9c3e91523c971934.pdf",
+    "url": "/assets/docs/independent-monitoring-final-report.pdf",
     "year": 2022
   },
   {
@@ -490,7 +490,7 @@
     "authors": "Spark Street Advisors",
     "summary": "To inform the design of an accountability system for a pandemic treaty, this report explores institutional mechanisms with a mandate to review state compliance with key international agreements and conduct independent country investigations while managing sovereign considerations. It summarizes findings from a review of 19 international mechanisms and proposes combining periodic review, on-site investigations, non-negotiable design principles, and technical support.",
     "source": "Spark Street Advisors analysis and policy brief",
-    "url": "https://www.sparkstreetadvisors.org/_files/ugd/5428a3_f510f7d2d7e94fffbf32ccef7db46f51.pdf",
+    "url": "/assets/docs/independent-review-investigation-mechanisms.pdf",
     "year": 2023
   },
   {
@@ -500,7 +500,7 @@
     "authors": "Spark Street Advisors",
     "summary": "HPV vaccination programs worldwide have primarily deployed school-based delivery strategies, with very little effort to reach girls who are temporarily or permanently out of school or beyond school age. This global synthesis reviews non-school delivery strategies in low- and middle-income countries for girls aged 9-19, and, with Ethiopia as a frontrunner country, develops an assessment tool to identify entry points, partners, and new approaches for reaching out-of-school girls with HPV vaccinations.",
     "source": "Spark Street Advisors global review, assessment tool, and Ethiopia report",
-    "url": "https://www.sparkstreetadvisors.org/_files/ugd/1db6c2_96972423869c441586b2d001b2958a30.pdf",
+    "url": "/assets/docs/hpv-global-review.pdf",
     "year": 2025,
     "topic": "Immunization and Maternal Health;Mental and Adolescent Health"
   },
@@ -511,7 +511,7 @@
     "authors": "Spark Street Advisors",
     "summary": "Companion tool to Spark Street's global review of HPV vaccination strategies for out-of-school girls. Developed with the Bill & Melinda Gates Foundation, Pathfinder, Acasus, and Social Impact, this assessment tool provides a standardized approach to identify entry points, partners, and new approaches for reaching out-of-school girls aged 9-19 with HPV vaccinations. Used for a country assessment in Ethiopia.",
     "source": "Spark Street Advisors assessment tool",
-    "url": "https://www.sparkstreetadvisors.org/_files/ugd/1db6c2_0564d0c39f0e4b4a8c468057d2f60cc0.pdf",
+    "url": "/assets/docs/hpv-assessment-tool.pdf",
     "year": 2025,
     "topic": "Immunization and Maternal Health;Mental and Adolescent Health"
   },
@@ -522,7 +522,7 @@
     "authors": "Spark Street Advisors",
     "summary": "This report explores organizational learning, summarizing theoretical and practical aspects. It examines key concepts, models, and enablers of learning that help organizations adapt and develop, and, by analyzing six global organizations including Gavi and the Global Fund, highlights how they apply a range of strategies and tools to foster a culture of learning.",
     "source": "Spark Street Advisors report",
-    "url": "https://www.sparkstreetadvisors.org/_files/ugd/1db6c2_864f2393eb054565bea066367c3b6eb6.pdf",
+    "url": "/assets/docs/learning-organizations-theory-practice.pdf",
     "year": 2024
   }
 ]

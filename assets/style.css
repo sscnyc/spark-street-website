@@ -46,6 +46,10 @@ header{
   backdrop-filter:blur(6px);
   border-bottom:1px solid var(--line);
 }
+/* Offset anchor-jump targets so the sticky header doesn't cover them */
+#top, #how-we-work, #what-we-do{
+  scroll-margin-top:140px;
+}
 .nav{
   display:flex; align-items:center; justify-content:space-between;
   padding:22px 40px 26px;

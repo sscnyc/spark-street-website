@@ -2,16 +2,25 @@
   "intro": "Spark Street engages with a select group of young professionals to provide hands-on experience in data analysis and policy development. Most have either recently finished or are currently enrolled in a post-graduate program, transitioning careers or re-entering the workforce.\n\nAnalysts perform a range of activities including secondary data analysis, policy analysis, literature reviews, interviews, survey design and administration, and synthesis of results. The team at Spark Street provides mentoring, career advice and facilitates connections to the broader public health community. If you are interested in working with us in this capacity, please contact Susanna Lehtimaki (slehtimaki@ssc.nyc).",
   "current": [
     {
-      "name": "Tara Sangal",
-      "credentials": "Master's in Public Health, Columbia University",
-      "tenure": "At Spark Street July 2026 – Present",
+      "name": "Anna Fedorova",
+      "credentials": "Bachelor's in Physics, Barnard College",
+      "tenure": "At Spark Street June 2026 – Present",
       "current_role": "",
-      "bio": "Tara's background is in epidemiology, data science, and climate and health. At Spark Street, she is conducting focus groups and quantitative data analysis, developing study protocols for a research paper, and conducting a post-hoc analysis. Tara's work bridges the gaps between evidence generation, communication and advocacy. She has a master's degree in public health from Columbia University and speaks Spanish and French.",
-      "linkedin": "https://www.linkedin.com/in/tarasangal/",
+      "bio": "Anna brings a background in physics, business operations, and visual media to her work at Spark Street. She holds a bachelor's degree in physics from Barnard College. At Spark Street, she contributes to policy briefings and organizational structure development, and handles the team's day-to-day operations, including internal workflows and the administrative groundwork that keeps things running smoothly. She speaks English, Russian, and Spanish.",
+      "linkedin": "https://www.linkedin.com/in/anna-fedorova-95956a1a6/",
       "email": ""
     }
   ],
   "past": [
+    {
+      "name": "Tara Sangal",
+      "credentials": "Master's in Public Health, Columbia University",
+      "tenure": "At Spark Street July – September 2026",
+      "current_role": "",
+      "bio": "Tara's background is in epidemiology, data science, and climate and health. At Spark Street, she conducted focus groups and quantitative data analysis, developed study protocols for a research paper, and conducted a post-hoc analysis. Tara's work bridged the gaps between evidence generation, communication and advocacy. She has a master's degree in public health from Columbia University and speaks Spanish and French.",
+      "linkedin": "https://www.linkedin.com/in/tarasangal/",
+      "email": ""
+    },
     {
       "name": "Kimberley Peek",
       "credentials": "MSc Control of Infectious Diseases",

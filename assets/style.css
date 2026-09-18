@@ -153,6 +153,7 @@ nav.links .sub a:hover{color:var(--teal); background:var(--paper-dim);}
   padding-left:24px;
 }
 .hero-side p{margin-bottom:14px;}
+.hero-side-lead{font-size:19px; line-height:1.4; color:var(--ink);}
 .hero-side p:last-child{margin-bottom:0;}
 .dataline{
   position:absolute;

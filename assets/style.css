@@ -134,7 +134,7 @@ nav.links .sub a:hover{color:var(--teal); background:var(--paper-dim);}
   display:grid;
   grid-template-columns:1fr 340px;
   gap:60px;
-  align-items:end;
+  align-items:stretch;
 }
 .hero h1{
   font-size:clamp(42px, 6vw, 76px);
@@ -149,19 +149,15 @@ nav.links .sub a:hover{color:var(--teal); background:var(--paper-dim);}
 .hero-side{
   font-size:14.5px;
   color:var(--ink-soft);
-  border-left:1px solid var(--line);
+  border-left:1px solid var(--teal);
   padding-left:24px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
 }
 .hero-side p{margin-bottom:14px;}
 .hero-side-lead{font-size:19px; line-height:1.4; color:var(--ink);}
 .hero-side p:last-child{margin-bottom:0;}
-.dataline{
-  position:absolute;
-  left:0; right:0; bottom:0;
-  height:64px;
-  z-index:1;
-  opacity:0.85;
-}
 
 /* ===== GENERIC PAGE HERO (Team / Publications) ===== */
 .page-hero{
